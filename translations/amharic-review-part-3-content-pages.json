@@ -1,0 +1,808 @@
+{
+  "document_purpose": "Amharic UX copy review for the Aspio Ethiopia website",
+  "project": "Aspio Ethiopia",
+  "section": "Part 3: business, marketplace, and how-it-works pages",
+  "instructions_for_gemini": [
+    "Act as a senior Ethiopian Amharic UX writer and localization editor based in Addis Ababa.",
+    "Rewrite every current_amharic value into natural, contemporary, polished Amharic suitable for an Ethiopian technology and beauty marketplace.",
+    "Use the matching English reference source to recover the intended meaning. Do not translate literally when a natural Ethiopian expression is clearer.",
+    "Keep the language concise enough to fit buttons, cards, navigation, forms, calendars, and mobile screens.",
+    "Preserve Aspio, Business Starter, Website, CRM, API, URLs, email addresses, prices, numbers, dates, and time values exactly unless the existing Amharic numeral itself is intentional.",
+    "Keep accepted Addis Ababa neighborhood names and Ethiopian personal names correctly spelled.",
+    "Never introduce a star character or a star-rating symbol.",
+    "Do not edit id, source_file, source_line, source_kind, current_amharic, nearby_context, English reference sources, or the JSON structure.",
+    "Fill revised_amharic for every item. Do not leave any item blank, omit IDs, merge items, add commentary, or place markup/code in a translation.",
+    "Return the completed JSON as a downloadable file named amharic-copy-reviewed.json. Do not paste a shortened or partial result into chat."
+  ],
+  "continuation_note": "Part 1 has already been applied. Complete every item in this smaller continuation file and preserve every ID.",
+  "product_context": {
+    "brand": "Aspio",
+    "market": "Ethiopia",
+    "audience": "Salon, barbershop, nail studio, spa owners and their customers in Addis Ababa",
+    "offer": "Business Starter + Website: online booking, customer records, reminders, reports, and a business website",
+    "tone": "Clear, warm, trustworthy, modern, locally natural, and professional"
+  },
+  "item_count": 86,
+  "translation_items": [
+    {
+      "id": "app/ethiopia/business/page.tsx#1",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 4,
+      "source_kind": "code string",
+      "current_amharic": "ብልህ ቀጠሮ",
+      "nearby_context": "import Link from \"next/link\"; const features = [ { title: \"ብልህ ቀጠሮ\", body: \"24/7 የመስመር ላይ ቀጠሮ። ደንበኞችዎ በራሳቸው ጊዜ ያስይዛሉ።\" }, { title: \"የንግድ ድረ-ገጽ\", body: \"አገልግሎቶች",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#2",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 4,
+      "source_kind": "code string",
+      "current_amharic": "24/7 የመስመር ላይ ቀጠሮ። ደንበኞችዎ በራሳቸው ጊዜ ያስይዛሉ።",
+      "nearby_context": "import Link from \"next/link\"; const features = [ { title: \"ብልህ ቀጠሮ\", body: \"24/7 የመስመር ላይ ቀጠሮ። ደንበኞችዎ በራሳቸው ጊዜ ያስይዛሉ።\" }, { title: \"የንግድ ድረ-ገጽ\", body: \"አገልግሎቶችዎን የሚያሳይ እና ቀጠሮ የሚቀበል ለብራንድዎ የተሰራ ድረ-ገጽ።\" }, { ti",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#3",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 5,
+      "source_kind": "code string",
+      "current_amharic": "የንግድ ድረ-ገጽ",
+      "nearby_context": "res = [ { title: \"ብልህ ቀጠሮ\", body: \"24/7 የመስመር ላይ ቀጠሮ። ደንበኞችዎ በራሳቸው ጊዜ ያስይዛሉ።\" }, { title: \"የንግድ ድረ-ገጽ\", body: \"አገልግሎቶችዎን የሚያሳይ እና ቀጠሮ የሚቀበል ለብራንድዎ የተሰራ ድረ-ገጽ።\" }, { title: \"የደንበኛ መዝገብ\", body: \"የ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#4",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 5,
+      "source_kind": "code string",
+      "current_amharic": "አገልግሎቶችዎን የሚያሳይ እና ቀጠሮ የሚቀበል ለብራንድዎ የተሰራ ድረ-ገጽ።",
+      "nearby_context": "ብልህ ቀጠሮ\", body: \"24/7 የመስመር ላይ ቀጠሮ። ደንበኞችዎ በራሳቸው ጊዜ ያስይዛሉ።\" }, { title: \"የንግድ ድረ-ገጽ\", body: \"አገልግሎቶችዎን የሚያሳይ እና ቀጠሮ የሚቀበል ለብራንድዎ የተሰራ ድረ-ገጽ።\" }, { title: \"የደንበኛ መዝገብ\", body: \"የደንበኞችዎን ታሪክ፣ ማስታወሻ እና ተመራጭ አገልግሎት ያከማቹ።\" }, { title: \"የ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#5",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 6,
+      "source_kind": "code string",
+      "current_amharic": "የደንበኛ መዝገብ",
+      "nearby_context": "{ title: \"የንግድ ድረ-ገጽ\", body: \"አገልግሎቶችዎን የሚያሳይ እና ቀጠሮ የሚቀበል ለብራንድዎ የተሰራ ድረ-ገጽ።\" }, { title: \"የደንበኛ መዝገብ\", body: \"የደንበኞችዎን ታሪክ፣ ማስታወሻ እና ተመራጭ አገልግሎት ያከማቹ።\" }, { title: \"የአገልግሎት ማውጫ\", body: \"ዋጋ፣ ጊዜ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#6",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 6,
+      "source_kind": "code string",
+      "current_amharic": "የደንበኞችዎን ታሪክ፣ ማስታወሻ እና ተመራጭ አገልግሎት ያከማቹ።",
+      "nearby_context": "ጽ\", body: \"አገልግሎቶችዎን የሚያሳይ እና ቀጠሮ የሚቀበል ለብራንድዎ የተሰራ ድረ-ገጽ።\" }, { title: \"የደንበኛ መዝገብ\", body: \"የደንበኞችዎን ታሪክ፣ ማስታወሻ እና ተመራጭ አገልግሎት ያከማቹ።\" }, { title: \"የአገልግሎት ማውጫ\", body: \"ዋጋ፣ ጊዜ እና የቡድን አባላትን በቀላሉ ያዘጋጁ።\" }, { title: \"ራስ ሰር ማስታ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#7",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 7,
+      "source_kind": "code string",
+      "current_amharic": "የአገልግሎት ማውጫ",
+      "nearby_context": "።\" }, { title: \"የደንበኛ መዝገብ\", body: \"የደንበኞችዎን ታሪክ፣ ማስታወሻ እና ተመራጭ አገልግሎት ያከማቹ።\" }, { title: \"የአገልግሎት ማውጫ\", body: \"ዋጋ፣ ጊዜ እና የቡድን አባላትን በቀላሉ ያዘጋጁ።\" }, { title: \"ራስ ሰር ማስታወሻ\", body: \"የSMS እና ኢሜይል ማስታ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#8",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 7,
+      "source_kind": "code string",
+      "current_amharic": "ዋጋ፣ ጊዜ እና የቡድን አባላትን በቀላሉ ያዘጋጁ።",
+      "nearby_context": "በኛ መዝገብ\", body: \"የደንበኞችዎን ታሪክ፣ ማስታወሻ እና ተመራጭ አገልግሎት ያከማቹ።\" }, { title: \"የአገልግሎት ማውጫ\", body: \"ዋጋ፣ ጊዜ እና የቡድን አባላትን በቀላሉ ያዘጋጁ።\" }, { title: \"ራስ ሰር ማስታወሻ\", body: \"የSMS እና ኢሜይል ማስታወሻ—ያልተገኙ ቀጠሮዎችን ይቀንሱ።\" }, { title: \"ትንታ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#9",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 8,
+      "source_kind": "code string",
+      "current_amharic": "ራስ ሰር ማስታወሻ",
+      "nearby_context": "ግሎት ያከማቹ።\" }, { title: \"የአገልግሎት ማውጫ\", body: \"ዋጋ፣ ጊዜ እና የቡድን አባላትን በቀላሉ ያዘጋጁ።\" }, { title: \"ራስ ሰር ማስታወሻ\", body: \"የSMS እና ኢሜይል ማስታወሻ—ያልተገኙ ቀጠሮዎችን ይቀንሱ።\" }, { title: \"ትንታኔ እና ሪፖርት\", body: \"እድገትዎን፣ ተ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#10",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 8,
+      "source_kind": "code string",
+      "current_amharic": "የSMS እና ኢሜይል ማስታወሻ—ያልተገኙ ቀጠሮዎችን ይቀንሱ።",
+      "nearby_context": "le: \"የአገልግሎት ማውጫ\", body: \"ዋጋ፣ ጊዜ እና የቡድን አባላትን በቀላሉ ያዘጋጁ።\" }, { title: \"ራስ ሰር ማስታወሻ\", body: \"የSMS እና ኢሜይል ማስታወሻ—ያልተገኙ ቀጠሮዎችን ይቀንሱ።\" }, { title: \"ትንታኔ እና ሪፖርት\", body: \"እድገትዎን፣ ተወዳጅ አገልግሎቶችዎን እና የደንበኞችዎን ባህሪ ይመልከቱ።\" }, ]; co",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#11",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 9,
+      "source_kind": "code string",
+      "current_amharic": "ትንታኔ እና ሪፖርት",
+      "nearby_context": "ጋጁ።\" }, { title: \"ራስ ሰር ማስታወሻ\", body: \"የSMS እና ኢሜይል ማስታወሻ—ያልተገኙ ቀጠሮዎችን ይቀንሱ።\" }, { title: \"ትንታኔ እና ሪፖርት\", body: \"እድገትዎን፣ ተወዳጅ አገልግሎቶችዎን እና የደንበኞችዎን ባህሪ ይመልከቱ።\" }, ]; const included = [ \"የመስመር ላይ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#12",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 9,
+      "source_kind": "code string",
+      "current_amharic": "እድገትዎን፣ ተወዳጅ አገልግሎቶችዎን እና የደንበኞችዎን ባህሪ ይመልከቱ።",
+      "nearby_context": "ሰር ማስታወሻ\", body: \"የSMS እና ኢሜይል ማስታወሻ—ያልተገኙ ቀጠሮዎችን ይቀንሱ።\" }, { title: \"ትንታኔ እና ሪፖርት\", body: \"እድገትዎን፣ ተወዳጅ አገልግሎቶችዎን እና የደንበኞችዎን ባህሪ ይመልከቱ።\" }, ]; const included = [ \"የመስመር ላይ ቀጠሮ\", \"ለንግድዎ የተሰራ ድረ-ገጽ\", \"የደንበኛ መዝገብ\", \"የSMS እና",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#13",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 13,
+      "source_kind": "code string",
+      "current_amharic": "የመስመር ላይ ቀጠሮ",
+      "nearby_context": "ኔ እና ሪፖርት\", body: \"እድገትዎን፣ ተወዳጅ አገልግሎቶችዎን እና የደንበኞችዎን ባህሪ ይመልከቱ።\" }, ]; const included = [ \"የመስመር ላይ ቀጠሮ\", \"ለንግድዎ የተሰራ ድረ-ገጽ\", \"የደንበኛ መዝገብ\", \"የSMS እና ኢሜይል ማስታወሻ\", \"የንግድ ሪፖርት\", \"የአማርኛ ድጋፍ\",",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#14",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 14,
+      "source_kind": "code string",
+      "current_amharic": "ለንግድዎ የተሰራ ድረ-ገጽ",
+      "nearby_context": "\"እድገትዎን፣ ተወዳጅ አገልግሎቶችዎን እና የደንበኞችዎን ባህሪ ይመልከቱ።\" }, ]; const included = [ \"የመስመር ላይ ቀጠሮ\", \"ለንግድዎ የተሰራ ድረ-ገጽ\", \"የደንበኛ መዝገብ\", \"የSMS እና ኢሜይል ማስታወሻ\", \"የንግድ ሪፖርት\", \"የአማርኛ ድጋፍ\", ]; export default fun",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#15",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 15,
+      "source_kind": "code string",
+      "current_amharic": "የደንበኛ መዝገብ",
+      "nearby_context": "ን እና የደንበኞችዎን ባህሪ ይመልከቱ።\" }, ]; const included = [ \"የመስመር ላይ ቀጠሮ\", \"ለንግድዎ የተሰራ ድረ-ገጽ\", \"የደንበኛ መዝገብ\", \"የSMS እና ኢሜይል ማስታወሻ\", \"የንግድ ሪፖርት\", \"የአማርኛ ድጋፍ\", ]; export default function EthiopiaV3",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#16",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 16,
+      "source_kind": "code string",
+      "current_amharic": "የSMS እና ኢሜይል ማስታወሻ",
+      "nearby_context": "ሪ ይመልከቱ።\" }, ]; const included = [ \"የመስመር ላይ ቀጠሮ\", \"ለንግድዎ የተሰራ ድረ-ገጽ\", \"የደንበኛ መዝገብ\", \"የSMS እና ኢሜይል ማስታወሻ\", \"የንግድ ሪፖርት\", \"የአማርኛ ድጋፍ\", ]; export default function EthiopiaV3Business() { return (",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#17",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 17,
+      "source_kind": "code string",
+      "current_amharic": "የንግድ ሪፖርት",
+      "nearby_context": "ncluded = [ \"የመስመር ላይ ቀጠሮ\", \"ለንግድዎ የተሰራ ድረ-ገጽ\", \"የደንበኛ መዝገብ\", \"የSMS እና ኢሜይል ማስታወሻ\", \"የንግድ ሪፖርት\", \"የአማርኛ ድጋፍ\", ]; export default function EthiopiaV3Business() { return ( <section cl",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#18",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 18,
+      "source_kind": "code string",
+      "current_amharic": "የአማርኛ ድጋፍ",
+      "nearby_context": "የመስመር ላይ ቀጠሮ\", \"ለንግድዎ የተሰራ ድረ-ገጽ\", \"የደንበኛ መዝገብ\", \"የSMS እና ኢሜይል ማስታወሻ\", \"የንግድ ሪፖርት\", \"የአማርኛ ድጋፍ\", ]; export default function EthiopiaV3Business() { return ( <section className=\"am-pag",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#19",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 26,
+      "source_kind": "visible page text",
+      "current_amharic": "ለሳሎን ባለቤቶች",
+      "nearby_context": "<div className=\"am-business-hero\"> <div> <p className=\"am-eyebrow\"><span />ለሳሎን ባለቤቶች</p> <h1>ወንበርዎን<br /><strong>በደንበኞች</strong><br />ይሙሉ።</h1> <p className=\"a",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#20",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 27,
+      "source_kind": "visible page text",
+      "current_amharic": "ወንበርዎን",
+      "nearby_context": "-hero\"> <div> <p className=\"am-eyebrow\"><span />ለሳሎን ባለቤቶች</p> <h1>ወንበርዎን<br /><strong>በደንበኞች</strong><br />ይሙሉ።</h1> <p className=\"am-intro\">ቀጠሮ፣ ደንበኛ እና የንግ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#21",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 27,
+      "source_kind": "visible page text",
+      "current_amharic": "በደንበኞች",
+      "nearby_context": "> <p className=\"am-eyebrow\"><span />ለሳሎን ባለቤቶች</p> <h1>ወንበርዎን<br /><strong>በደንበኞች</strong><br />ይሙሉ።</h1> <p className=\"am-intro\">ቀጠሮ፣ ደንበኛ እና የንግድ ድረ-ገጽ—በአንድ ቀላል የስራ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#22",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 27,
+      "source_kind": "visible page text",
+      "current_amharic": "ይሙሉ።",
+      "nearby_context": "ame=\"am-eyebrow\"><span />ለሳሎን ባለቤቶች</p> <h1>ወንበርዎን<br /><strong>በደንበኞች</strong><br />ይሙሉ።</h1> <p className=\"am-intro\">ቀጠሮ፣ ደንበኛ እና የንግድ ድረ-ገጽ—በአንድ ቀላል የስራ ፍሰት። ለኢትዮጵያ ንግዶች የ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#23",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 28,
+      "source_kind": "visible page text",
+      "current_amharic": "ቀጠሮ፣ ደንበኛ እና የንግድ ድረ-ገጽ—በአንድ ቀላል የስራ ፍሰት። ለኢትዮጵያ ንግዶች የተዘጋጀ።",
+      "nearby_context": "<h1>ወንበርዎን<br /><strong>በደንበኞች</strong><br />ይሙሉ።</h1> <p className=\"am-intro\">ቀጠሮ፣ ደንበኛ እና የንግድ ድረ-ገጽ—በአንድ ቀላል የስራ ፍሰት። ለኢትዮጵያ ንግዶች የተዘጋጀ።</p> <ul className=\"am-check-list\"> <li><i aria-hidden=\"true\">✓</i>0% ኮሚሽ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#24",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 30,
+      "source_kind": "visible page text",
+      "current_amharic": "0% ኮሚሽን በእያንዳንዱ ቀጠሮ",
+      "nearby_context": "የተዘጋጀ።</p> <ul className=\"am-check-list\"> <li><i aria-hidden=\"true\">✓</i>0% ኮሚሽን በእያንዳንዱ ቀጠሮ</li> <li><i aria-hidden=\"true\">✓</i>የአማርኛ ድጋፍ በስልክ እና በኢሜይል</li> <li><",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#25",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 31,
+      "source_kind": "visible page text",
+      "current_amharic": "የአማርኛ ድጋፍ በስልክ እና በኢሜይል",
+      "nearby_context": "<i aria-hidden=\"true\">✓</i>0% ኮሚሽን በእያንዳንዱ ቀጠሮ</li> <li><i aria-hidden=\"true\">✓</i>የአማርኛ ድጋፍ በስልክ እና በኢሜይል</li> <li><i aria-hidden=\"true\">✓</i>ውል የለም — በማንኛውም ጊዜ ማቋረጥ ይችላሉ</li> </",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#26",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 32,
+      "source_kind": "visible page text",
+      "current_amharic": "ውል የለም — በማንኛውም ጊዜ ማቋረጥ ይችላሉ",
+      "nearby_context": "ria-hidden=\"true\">✓</i>የአማርኛ ድጋፍ በስልክ እና በኢሜይል</li> <li><i aria-hidden=\"true\">✓</i>ውል የለም — በማንኛውም ጊዜ ማቋረጥ ይችላሉ</li> </ul> </div> <aside className=\"am-offer-card\"> <span",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#27",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 40,
+      "source_kind": "visible page text",
+      "current_amharic": "ብር",
+      "nearby_context": "<div className=\"am-offer-price\"> <strong>5,000</strong> <div><b>ብር</b><small>/ በወር*</small></div> </div> <s>ተራ 7,500 ብር</s> <h3>ለመጀ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#28",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 40,
+      "source_kind": "visible page text",
+      "current_amharic": "/ በወር*",
+      "nearby_context": "lassName=\"am-offer-price\"> <strong>5,000</strong> <div><b>ብር</b><small>/ በወር*</small></div> </div> <s>ተራ 7,500 ብር</s> <h3>ለመጀመር የሚያስፈልግዎ ሁሉ።</",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#29",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 42,
+      "source_kind": "visible page text",
+      "current_amharic": "ተራ 7,500 ብር",
+      "nearby_context": "0</strong> <div><b>ብር</b><small>/ በወር*</small></div> </div> <s>ተራ 7,500 ብር</s> <h3>ለመጀመር የሚያስፈልግዎ ሁሉ።</h3> <ul> {included.map((item) => <",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#30",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 43,
+      "source_kind": "visible page text",
+      "current_amharic": "ለመጀመር የሚያስፈልግዎ ሁሉ።",
+      "nearby_context": ">ብር</b><small>/ በወር*</small></div> </div> <s>ተራ 7,500 ብር</s> <h3>ለመጀመር የሚያስፈልግዎ ሁሉ።</h3> <ul> {included.map((item) => <li key={item}><i aria-hidden=\"true\">✓",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#31",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 47,
+      "source_kind": "visible page text",
+      "current_amharic": "የመጫኛ ክፍያ 2,000 ብር · 0% ኮሚሽን",
+      "nearby_context": "m) => <li key={item}><i aria-hidden=\"true\">✓</i>{item}</li>)} </ul> <small>የመጫኛ ክፍያ 2,000 ብር · 0% ኮሚሽን</small> </aside> </div> <div className=\"am-feature-band\"> <div cl",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#32",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 53,
+      "source_kind": "visible page text",
+      "current_amharic": "ለምን አስፒዮ",
+      "nearby_context": "<div className=\"am-feature-band\"> <div className=\"am-section-head\"> <p>ለምን አስፒዮ</p> <h2>የተለመደው ስራዎ፣ በተለየ ስሜት።</h2> </div> <div className=\"am-feature",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#33",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 54,
+      "source_kind": "visible page text",
+      "current_amharic": "የተለመደው ስራዎ፣ በተለየ ስሜት።",
+      "nearby_context": "ature-band\"> <div className=\"am-section-head\"> <p>ለምን አስፒዮ</p> <h2>የተለመደው ስራዎ፣ በተለየ ስሜት።</h2> </div> <div className=\"am-feature-grid\"> {features.map((feature",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#34",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 69,
+      "source_kind": "visible page text",
+      "current_amharic": "ነፃ ማሳያ",
+      "nearby_context": "<div className=\"am-form-band\"> <div> <p className=\"am-eyebrow\"><span />ነፃ ማሳያ</p> <h2>Business Starter + Websiteን በቀጥታ ይመልከቱ።</h2> <p>የ30 ደቂቃ ማሳያ በአማርኛ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#35",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 70,
+      "source_kind": "visible page text",
+      "current_amharic": "Business Starter + Websiteን በቀጥታ ይመልከቱ።",
+      "nearby_context": "form-band\"> <div> <p className=\"am-eyebrow\"><span />ነፃ ማሳያ</p> <h2>Business Starter + Websiteን በቀጥታ ይመልከቱ።</h2> <p>የ30 ደቂቃ ማሳያ በአማርኛ ወይም በእንግሊዝኛ። ምንም ግዴታ የለም።</p> </div> <Link",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#36",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 71,
+      "source_kind": "visible page text",
+      "current_amharic": "የ30 ደቂቃ ማሳያ በአማርኛ ወይም በእንግሊዝኛ። ምንም ግዴታ የለም።",
+      "nearby_context": "ow\"><span />ነፃ ማሳያ</p> <h2>Business Starter + Websiteን በቀጥታ ይመልከቱ።</h2> <p>የ30 ደቂቃ ማሳያ በአማርኛ ወይም በእንግሊዝኛ። ምንም ግዴታ የለም።</p> </div> <Link className=\"am-business-demo-card\" href=\"/ethiopia/register\">",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#37",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 75,
+      "source_kind": "visible page text",
+      "current_amharic": "የግል ማሳያ",
+      "nearby_context": "business-demo-card\" href=\"/ethiopia/register\"> <span>01</span> <div><small>የግል ማሳያ</small><b>መረጃዎን ይሙሉ</b></div> <i aria-hidden=\"true\">↗</i> </Link> </di",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/business/page.tsx#38",
+      "source_file": "app/ethiopia/business/page.tsx",
+      "source_line": 75,
+      "source_kind": "visible page text",
+      "current_amharic": "መረጃዎን ይሙሉ",
+      "nearby_context": "\" href=\"/ethiopia/register\"> <span>01</span> <div><small>የግል ማሳያ</small><b>መረጃዎን ይሙሉ</b></div> <i aria-hidden=\"true\">↗</i> </Link> </div> </section>",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#1",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 7,
+      "source_kind": "code string",
+      "current_amharic": "ሁሉም",
+      "nearby_context": "mport { useMemo, useState } from \"react\"; import { places } from \"../data\"; const filters = [\"ሁሉም\", \"ሳሎን\", \"ባርበር\", \"ስፓ\"]; export default function EthiopiaV3Discover() { const [filter, setFi",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#2",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 7,
+      "source_kind": "code string",
+      "current_amharic": "ሳሎን",
+      "nearby_context": "useMemo, useState } from \"react\"; import { places } from \"../data\"; const filters = [\"ሁሉም\", \"ሳሎን\", \"ባርበር\", \"ስፓ\"]; export default function EthiopiaV3Discover() { const [filter, setFilter] =",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#3",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 7,
+      "source_kind": "code string",
+      "current_amharic": "ባርበር",
+      "nearby_context": "o, useState } from \"react\"; import { places } from \"../data\"; const filters = [\"ሁሉም\", \"ሳሎን\", \"ባርበር\", \"ስፓ\"]; export default function EthiopiaV3Discover() { const [filter, setFilter] = useStat",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#4",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 7,
+      "source_kind": "code string",
+      "current_amharic": "ስፓ",
+      "nearby_context": "ate } from \"react\"; import { places } from \"../data\"; const filters = [\"ሁሉም\", \"ሳሎን\", \"ባርበር\", \"ስፓ\"]; export default function EthiopiaV3Discover() { const [filter, setFilter] = useState(\"ሁሉም",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#5",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 10,
+      "source_kind": "code string",
+      "current_amharic": "ሁሉም",
+      "nearby_context": "\"ስፓ\"]; export default function EthiopiaV3Discover() { const [filter, setFilter] = useState(\"ሁሉም\"); const [query, setQuery] = useState(\"\"); const filtered = useMemo(() => { const byT",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#6",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 14,
+      "source_kind": "code string",
+      "current_amharic": "ሁሉም",
+      "nearby_context": ", setQuery] = useState(\"\"); const filtered = useMemo(() => { const byType = filter === \"ሁሉም\" ? places : places.filter((p) => filter === \"ባርበር\" ? p.type.includes(\"ወንዶች\") : fil",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#7",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 16,
+      "source_kind": "code string",
+      "current_amharic": "ባርበር",
+      "nearby_context": "{ const byType = filter === \"ሁሉም\" ? places : places.filter((p) => filter === \"ባርበር\" ? p.type.includes(\"ወንዶች\") : filter === \"ሳሎን\" ? p.type.includes(\"ሳሎን\") : p.type.includes(\"ስፓ\")",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#8",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 16,
+      "source_kind": "code string",
+      "current_amharic": "ወንዶች",
+      "nearby_context": "ter === \"ሁሉም\" ? places : places.filter((p) => filter === \"ባርበር\" ? p.type.includes(\"ወንዶች\") : filter === \"ሳሎን\" ? p.type.includes(\"ሳሎን\") : p.type.includes(\"ስፓ\")); if (!query.trim())",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#9",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 16,
+      "source_kind": "code string",
+      "current_amharic": "ሳሎን",
+      "nearby_context": "places : places.filter((p) => filter === \"ባርበር\" ? p.type.includes(\"ወንዶች\") : filter === \"ሳሎን\" ? p.type.includes(\"ሳሎን\") : p.type.includes(\"ስፓ\")); if (!query.trim()) return byType;",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#10",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 16,
+      "source_kind": "code string",
+      "current_amharic": "ሳሎን",
+      "nearby_context": "ilter((p) => filter === \"ባርበር\" ? p.type.includes(\"ወንዶች\") : filter === \"ሳሎን\" ? p.type.includes(\"ሳሎን\") : p.type.includes(\"ስፓ\")); if (!query.trim()) return byType; const q = query.trim().t",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#11",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 16,
+      "source_kind": "code string",
+      "current_amharic": "ስፓ",
+      "nearby_context": "ባርበር\" ? p.type.includes(\"ወንዶች\") : filter === \"ሳሎን\" ? p.type.includes(\"ሳሎን\") : p.type.includes(\"ስፓ\")); if (!query.trim()) return byType; const q = query.trim().toLowerCase(); return",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#12",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 25,
+      "source_kind": "visible page text",
+      "current_amharic": "የአስፒዮ ማርኬትፕሌስ",
+      "nearby_context": "<section className=\"am-page am-discover\"> <div className=\"am-page-head\"> <p>የአስፒዮ ማርኬትፕሌስ</p> <h1>ቀጣዩን ተወዳጅ ቦታዎን ያግኙ።</h1> <span>የተረጋገጡ ባለሙያዎች፣ ግልጽ ዋጋ እና በቀጥታ የሚታዩ ክፍት",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#13",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 26,
+      "source_kind": "visible page text",
+      "current_amharic": "ቀጣዩን ተወዳጅ ቦታዎን ያግኙ።",
+      "nearby_context": "ge am-discover\"> <div className=\"am-page-head\"> <p>የአስፒዮ ማርኬትፕሌስ</p> <h1>ቀጣዩን ተወዳጅ ቦታዎን ያግኙ።</h1> <span>የተረጋገጡ ባለሙያዎች፣ ግልጽ ዋጋ እና በቀጥታ የሚታዩ ክፍት ሰዓቶች።</span> </div> <di",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#14",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 27,
+      "source_kind": "visible page text",
+      "current_amharic": "የተረጋገጡ ባለሙያዎች፣ ግልጽ ዋጋ እና በቀጥታ የሚታዩ ክፍት ሰዓቶች።",
+      "nearby_context": "am-page-head\"> <p>የአስፒዮ ማርኬትፕሌስ</p> <h1>ቀጣዩን ተወዳጅ ቦታዎን ያግኙ።</h1> <span>የተረጋገጡ ባለሙያዎች፣ ግልጽ ዋጋ እና በቀጥታ የሚታዩ ክፍት ሰዓቶች።</span> </div> <div className=\"am-search\"> <span aria-hidden=\"true\">⌕</spa",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#15",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 33,
+      "source_kind": "code string",
+      "current_amharic": "ፈልግ",
+      "nearby_context": "me=\"am-search\"> <span aria-hidden=\"true\">⌕</span> <input aria-label=\"ፈልግ\" placeholder=\"ሳሎን፣ አገልግሎት ወይም አካባቢ...\" value={query} onChange={(",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#16",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 34,
+      "source_kind": "code string",
+      "current_amharic": "ሳሎን፣ አገልግሎት ወይም አካባቢ...",
+      "nearby_context": "n aria-hidden=\"true\">⌕</span> <input aria-label=\"ፈልግ\" placeholder=\"ሳሎን፣ አገልግሎት ወይም አካባቢ...\" value={query} onChange={(e) => setQuery(e.target.value)} />",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#17",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 38,
+      "source_kind": "code string",
+      "current_amharic": "አጽዳ",
+      "nearby_context": "target.value)} /> <button type=\"button\" onClick={() => setQuery(\"\")}>{query ? \"አጽዳ\" : \"ፈልግ\"}</button> </div> <div className=\"am-filters\" role=\"tablist\" aria-label=\"",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#18",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 38,
+      "source_kind": "code string",
+      "current_amharic": "ፈልግ",
+      "nearby_context": "alue)} /> <button type=\"button\" onClick={() => setQuery(\"\")}>{query ? \"አጽዳ\" : \"ፈልግ\"}</button> </div> <div className=\"am-filters\" role=\"tablist\" aria-label=\"ማጣሪያ\">",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#19",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 41,
+      "source_kind": "code string",
+      "current_amharic": "ማጣሪያ",
+      "nearby_context": "\" : \"ፈልግ\"}</button> </div> <div className=\"am-filters\" role=\"tablist\" aria-label=\"ማጣሪያ\"> {filters.map((f) => ( <button key={f} type=\"button",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#20",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 54,
+      "source_kind": "visible page text",
+      "current_amharic": "ውጤት",
+      "nearby_context": "{f} </button> ))} <span className=\"am-count\">{filtered.length} ውጤት</span> </div> <div className=\"am-grid\"> {filtered.map((place) => (",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#21",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 63,
+      "source_kind": "code string",
+      "current_amharic": "ወደ ተወዳጆች ጨምር",
+      "nearby_context": "\">{place.tag}</span> <button type=\"button\" className=\"am-card-heart\" aria-label=\"ወደ ተወዳጆች ጨምር\">♡</button> </div> <div className=\"am-card-body\"> <div c",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#22",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 72,
+      "source_kind": "visible page text",
+      "current_amharic": "ጊዜ ይያዙ",
+      "nearby_context": "<footer> <b>{place.price}</b> <button type=\"button\">ጊዜ ይያዙ<span aria-hidden=\"true\">→</span></button> </footer> </div>",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#23",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 81,
+      "source_kind": "visible page text",
+      "current_amharic": "ምንም ውጤት አልተገኘም።",
+      "nearby_context": "</div> {filtered.length === 0 && ( <div className=\"am-empty\"> <b>ምንም ውጤት አልተገኘም።</b> <p>ሌላ አካባቢ ወይም አገልግሎት ይሞክሩ።</p> </div> )} </section> ); }",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/discover/page.tsx#24",
+      "source_file": "app/ethiopia/discover/page.tsx",
+      "source_line": 82,
+      "source_kind": "visible page text",
+      "current_amharic": "ሌላ አካባቢ ወይም አገልግሎት ይሞክሩ።",
+      "nearby_context": "th === 0 && ( <div className=\"am-empty\"> <b>ምንም ውጤት አልተገኘም።</b> <p>ሌላ አካባቢ ወይም አገልግሎት ይሞክሩ።</p> </div> )} </section> ); }",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#1",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 4,
+      "source_kind": "code string",
+      "current_amharic": "ይፈልጉ",
+      "nearby_context": "import Link from \"next/link\"; const steps = [ { n: \"01\", title: \"ይፈልጉ\", body: \"በአካባቢ፣ በዋጋ ወይም በአገልግሎት ተስማሚ ቦታ ይምረጡ።\", icon: \"⌕\" }, { n: \"02\", title: \"ጊዜ ይምረጡ\", bo",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#2",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 4,
+      "source_kind": "code string",
+      "current_amharic": "በአካባቢ፣ በዋጋ ወይም በአገልግሎት ተስማሚ ቦታ ይምረጡ።",
+      "nearby_context": "import Link from \"next/link\"; const steps = [ { n: \"01\", title: \"ይፈልጉ\", body: \"በአካባቢ፣ በዋጋ ወይም በአገልግሎት ተስማሚ ቦታ ይምረጡ።\", icon: \"⌕\" }, { n: \"02\", title: \"ጊዜ ይምረጡ\", body: \"የባለሙያውን ክፍት ሰዓት በቀጥታ ይመልከቱ።\", icon: \"◷\" }",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#3",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 5,
+      "source_kind": "code string",
+      "current_amharic": "ጊዜ ይምረጡ",
+      "nearby_context": "title: \"ይፈልጉ\", body: \"በአካባቢ፣ በዋጋ ወይም በአገልግሎት ተስማሚ ቦታ ይምረጡ።\", icon: \"⌕\" }, { n: \"02\", title: \"ጊዜ ይምረጡ\", body: \"የባለሙያውን ክፍት ሰዓት በቀጥታ ይመልከቱ።\", icon: \"◷\" }, { n: \"03\", title: \"ያረጋግጡ\", body: \"ማረጋገጫ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#4",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 5,
+      "source_kind": "code string",
+      "current_amharic": "የባለሙያውን ክፍት ሰዓት በቀጥታ ይመልከቱ።",
+      "nearby_context": "dy: \"በአካባቢ፣ በዋጋ ወይም በአገልግሎት ተስማሚ ቦታ ይምረጡ።\", icon: \"⌕\" }, { n: \"02\", title: \"ጊዜ ይምረጡ\", body: \"የባለሙያውን ክፍት ሰዓት በቀጥታ ይመልከቱ።\", icon: \"◷\" }, { n: \"03\", title: \"ያረጋግጡ\", body: \"ማረጋገጫ በSMS እና በኢሜይል ወዲያውኑ ይደርስዎታል።\", icon:",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#5",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 6,
+      "source_kind": "code string",
+      "current_amharic": "ያረጋግጡ",
+      "nearby_context": "\"02\", title: \"ጊዜ ይምረጡ\", body: \"የባለሙያውን ክፍት ሰዓት በቀጥታ ይመልከቱ።\", icon: \"◷\" }, { n: \"03\", title: \"ያረጋግጡ\", body: \"ማረጋገጫ በSMS እና በኢሜይል ወዲያውኑ ይደርስዎታል።\", icon: \"✓\" }, { n: \"04\", title: \"ይደሰቱ\", body: \"",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#6",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 6,
+      "source_kind": "code string",
+      "current_amharic": "ማረጋገጫ በSMS እና በኢሜይል ወዲያውኑ ይደርስዎታል።",
+      "nearby_context": "ዜ ይምረጡ\", body: \"የባለሙያውን ክፍት ሰዓት በቀጥታ ይመልከቱ።\", icon: \"◷\" }, { n: \"03\", title: \"ያረጋግጡ\", body: \"ማረጋገጫ በSMS እና በኢሜይል ወዲያውኑ ይደርስዎታል።\", icon: \"✓\" }, { n: \"04\", title: \"ይደሰቱ\", body: \"ወደ ቀጠሮዎ ይሂዱ፤ ቀሪውን ለእኛ ይተዉ።\", icon: \"✓\" }, ];",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#7",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 7,
+      "source_kind": "code string",
+      "current_amharic": "ይደሰቱ",
+      "nearby_context": "title: \"ያረጋግጡ\", body: \"ማረጋገጫ በSMS እና በኢሜይል ወዲያውኑ ይደርስዎታል።\", icon: \"✓\" }, { n: \"04\", title: \"ይደሰቱ\", body: \"ወደ ቀጠሮዎ ይሂዱ፤ ቀሪውን ለእኛ ይተዉ።\", icon: \"✓\" }, ]; const benefits = [ { title: \"ግልጽ ዋጋ\",",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#8",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 7,
+      "source_kind": "code string",
+      "current_amharic": "ወደ ቀጠሮዎ ይሂዱ፤ ቀሪውን ለእኛ ይተዉ።",
+      "nearby_context": "\", body: \"ማረጋገጫ በSMS እና በኢሜይል ወዲያውኑ ይደርስዎታል።\", icon: \"✓\" }, { n: \"04\", title: \"ይደሰቱ\", body: \"ወደ ቀጠሮዎ ይሂዱ፤ ቀሪውን ለእኛ ይተዉ።\", icon: \"✓\" }, ]; const benefits = [ { title: \"ግልጽ ዋጋ\", body: \"የተደበቀ ክፍያ የለም። ከመቀጠሮዎ በፊት የሚ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#9",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 11,
+      "source_kind": "code string",
+      "current_amharic": "ግልጽ ዋጋ",
+      "nearby_context": "e: \"ይደሰቱ\", body: \"ወደ ቀጠሮዎ ይሂዱ፤ ቀሪውን ለእኛ ይተዉ።\", icon: \"✓\" }, ]; const benefits = [ { title: \"ግልጽ ዋጋ\", body: \"የተደበቀ ክፍያ የለም። ከመቀጠሮዎ በፊት የሚከፍሉትን ያውቃሉ።\" }, { title: \"ፈጣን ማረጋገጫ\", body: \"ቀጠሮ በሰከንዶች",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#10",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 11,
+      "source_kind": "code string",
+      "current_amharic": "የተደበቀ ክፍያ የለም። ከመቀጠሮዎ በፊት የሚከፍሉትን ያውቃሉ።",
+      "nearby_context": "\"ወደ ቀጠሮዎ ይሂዱ፤ ቀሪውን ለእኛ ይተዉ።\", icon: \"✓\" }, ]; const benefits = [ { title: \"ግልጽ ዋጋ\", body: \"የተደበቀ ክፍያ የለም። ከመቀጠሮዎ በፊት የሚከፍሉትን ያውቃሉ።\" }, { title: \"ፈጣን ማረጋገጫ\", body: \"ቀጠሮ በሰከንዶች ውስጥ። ማስታወሻ በተዘጋጀው ጊዜ።\" }, { title: \"የተረጋገጡ ባለሙ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#11",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 12,
+      "source_kind": "code string",
+      "current_amharic": "ፈጣን ማረጋገጫ",
+      "nearby_context": "nefits = [ { title: \"ግልጽ ዋጋ\", body: \"የተደበቀ ክፍያ የለም። ከመቀጠሮዎ በፊት የሚከፍሉትን ያውቃሉ።\" }, { title: \"ፈጣን ማረጋገጫ\", body: \"ቀጠሮ በሰከንዶች ውስጥ። ማስታወሻ በተዘጋጀው ጊዜ።\" }, { title: \"የተረጋገጡ ባለሙያዎች\", body: \"ሁሉም ቦታዎች በአስፒ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#12",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 12,
+      "source_kind": "code string",
+      "current_amharic": "ቀጠሮ በሰከንዶች ውስጥ። ማስታወሻ በተዘጋጀው ጊዜ።",
+      "nearby_context": "e: \"ግልጽ ዋጋ\", body: \"የተደበቀ ክፍያ የለም። ከመቀጠሮዎ በፊት የሚከፍሉትን ያውቃሉ።\" }, { title: \"ፈጣን ማረጋገጫ\", body: \"ቀጠሮ በሰከንዶች ውስጥ። ማስታወሻ በተዘጋጀው ጊዜ።\" }, { title: \"የተረጋገጡ ባለሙያዎች\", body: \"ሁሉም ቦታዎች በአስፒዮ ቡድን ተመርምረዋል።\" }, { title: \"ነፃ ስረዛ\", bo",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#13",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 13,
+      "source_kind": "code string",
+      "current_amharic": "የተረጋገጡ ባለሙያዎች",
+      "nearby_context": "ፍሉትን ያውቃሉ።\" }, { title: \"ፈጣን ማረጋገጫ\", body: \"ቀጠሮ በሰከንዶች ውስጥ። ማስታወሻ በተዘጋጀው ጊዜ።\" }, { title: \"የተረጋገጡ ባለሙያዎች\", body: \"ሁሉም ቦታዎች በአስፒዮ ቡድን ተመርምረዋል።\" }, { title: \"ነፃ ስረዛ\", body: \"እስከ 24 ሰዓት ድረስ ያለ ተጨማሪ ክፍ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#14",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 13,
+      "source_kind": "code string",
+      "current_amharic": "ሁሉም ቦታዎች በአስፒዮ ቡድን ተመርምረዋል።",
+      "nearby_context": "e: \"ፈጣን ማረጋገጫ\", body: \"ቀጠሮ በሰከንዶች ውስጥ። ማስታወሻ በተዘጋጀው ጊዜ።\" }, { title: \"የተረጋገጡ ባለሙያዎች\", body: \"ሁሉም ቦታዎች በአስፒዮ ቡድን ተመርምረዋል።\" }, { title: \"ነፃ ስረዛ\", body: \"እስከ 24 ሰዓት ድረስ ያለ ተጨማሪ ክፍያ መሰረዝ ይችላሉ።\" }, ]; export default f",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#15",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 14,
+      "source_kind": "code string",
+      "current_amharic": "ነፃ ስረዛ",
+      "nearby_context": "በተዘጋጀው ጊዜ።\" }, { title: \"የተረጋገጡ ባለሙያዎች\", body: \"ሁሉም ቦታዎች በአስፒዮ ቡድን ተመርምረዋል።\" }, { title: \"ነፃ ስረዛ\", body: \"እስከ 24 ሰዓት ድረስ ያለ ተጨማሪ ክፍያ መሰረዝ ይችላሉ።\" }, ]; export default function EthiopiaV3HowIt",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#16",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 14,
+      "source_kind": "code string",
+      "current_amharic": "እስከ 24 ሰዓት ድረስ ያለ ተጨማሪ ክፍያ መሰረዝ ይችላሉ።",
+      "nearby_context": "{ title: \"የተረጋገጡ ባለሙያዎች\", body: \"ሁሉም ቦታዎች በአስፒዮ ቡድን ተመርምረዋል።\" }, { title: \"ነፃ ስረዛ\", body: \"እስከ 24 ሰዓት ድረስ ያለ ተጨማሪ ክፍያ መሰረዝ ይችላሉ።\" }, ]; export default function EthiopiaV3HowItWorks() { return ( <section className=\"am",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#17",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 21,
+      "source_kind": "visible page text",
+      "current_amharic": "እንዴት ይሰራል",
+      "nearby_context": "urn ( <section className=\"am-page am-how\"> <div className=\"am-page-head\"> <p>እንዴት ይሰራል</p> <h1>አራት እርምጃ። አንድ ቀጠሮ።</h1> <span>የተለመደው ቀጠሮ ማስያዝ ጊዜ የሚወስድ መሆን የለበትም። ከቤትዎ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#18",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 22,
+      "source_kind": "visible page text",
+      "current_amharic": "አራት እርምጃ። አንድ ቀጠሮ።",
+      "nearby_context": "me=\"am-page am-how\"> <div className=\"am-page-head\"> <p>እንዴት ይሰራል</p> <h1>አራት እርምጃ። አንድ ቀጠሮ።</h1> <span>የተለመደው ቀጠሮ ማስያዝ ጊዜ የሚወስድ መሆን የለበትም። ከቤትዎ ወይም ከሥራ ቦታዎ በጥቂት ደቂቃዎች ውስጥ ይጨርሱ።</",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#19",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 23,
+      "source_kind": "visible page text",
+      "current_amharic": "የተለመደው ቀጠሮ ማስያዝ ጊዜ የሚወስድ መሆን የለበትም። ከቤትዎ ወይም ከሥራ ቦታዎ በጥቂት ደቂቃዎች ውስጥ ይጨርሱ።",
+      "nearby_context": "ame=\"am-page-head\"> <p>እንዴት ይሰራል</p> <h1>አራት እርምጃ። አንድ ቀጠሮ።</h1> <span>የተለመደው ቀጠሮ ማስያዝ ጊዜ የሚወስድ መሆን የለበትም። ከቤትዎ ወይም ከሥራ ቦታዎ በጥቂት ደቂቃዎች ውስጥ ይጨርሱ።</span> </div> <ol className=\"am-steps\"> {steps.map((step, i) => (",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#20",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 39,
+      "source_kind": "visible page text",
+      "current_amharic": "ለምን አስፒዮ",
+      "nearby_context": "l> <div className=\"am-benefits\"> <div className=\"am-section-head\"> <p>ለምን አስፒዮ</p> <h2>ቀጠሮ በጠቅላላ የተለየ ስሜት።</h2> </div> <div className=\"am-benefit-g",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#21",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 40,
+      "source_kind": "visible page text",
+      "current_amharic": "ቀጠሮ በጠቅላላ የተለየ ስሜት።",
+      "nearby_context": "m-benefits\"> <div className=\"am-section-head\"> <p>ለምን አስፒዮ</p> <h2>ቀጠሮ በጠቅላላ የተለየ ስሜት።</h2> </div> <div className=\"am-benefit-grid\"> {benefits.map((b) => (",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#22",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 55,
+      "source_kind": "visible page text",
+      "current_amharic": "ዝግጁ ነዎት?",
+      "nearby_context": ")} </div> </div> <div className=\"am-cta-band\"> <div> <p>ዝግጁ ነዎት?</p> <h2>ቀጣይ ቀጠሮዎን ዛሬ ይያዙ።</h2> </div> <Link className=\"am-btn am-btn",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#23",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 56,
+      "source_kind": "visible page text",
+      "current_amharic": "ቀጣይ ቀጠሮዎን ዛሬ ይያዙ።",
+      "nearby_context": "iv> <div className=\"am-cta-band\"> <div> <p>ዝግጁ ነዎት?</p> <h2>ቀጣይ ቀጠሮዎን ዛሬ ይያዙ።</h2> </div> <Link className=\"am-btn am-btn-light\" href=\"/ethiopia/discover\">ቦታ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/how-it-works/page.tsx#24",
+      "source_file": "app/ethiopia/how-it-works/page.tsx",
+      "source_line": 58,
+      "source_kind": "visible page text",
+      "current_amharic": "ቦታ ይፈልጉ",
+      "nearby_context": "ዙ።</h2> </div> <Link className=\"am-btn am-btn-light\" href=\"/ethiopia/discover\">ቦታ ይፈልጉ<span aria-hidden=\"true\">↗</span></Link> </div> </section> ); }",
+      "revised_amharic": ""
+    }
+  ],
+  "english_reference_sources": {
+    "app/ethiopia/en/business/page.tsx": "import Link from \"next/link\";\n\nconst features = [\n  { title: \"Smart booking\", body: \"Accept online bookings around the clock, whenever it suits your clients.\" },\n  { title: \"Business website\", body: \"A website shaped around your brand that presents services and accepts bookings.\" },\n  { title: \"Customer records\", body: \"Keep visit history, useful notes and favourite services together.\" },\n  { title: \"Service menu\", body: \"Set prices, duration and team availability without complicated setup.\" },\n  { title: \"Automatic reminders\", body: \"Reduce missed appointments with timely SMS and email reminders.\" },\n  { title: \"Insights and reports\", body: \"Understand growth, popular services and customer behaviour.\" },\n];\n\nconst included = [\n  \"Online booking\",\n  \"A website made for your business\",\n  \"Customer records\",\n  \"SMS and email reminders\",\n  \"Business reports\",\n  \"Amharic and English support\",\n];\n\nexport default function EthiopiaEnglishBusiness() {\n  return (\n    <section className=\"am-page am-business\">\n      <div className=\"am-business-hero\">\n        <div>\n          <p className=\"am-eyebrow\"><span />FOR SALON OWNERS</p>\n          <h1>Fill your chairs.<br /><strong>Calm your day.</strong><br />Grow your business.</h1>\n          <p className=\"am-intro\">Booking, customers and your business website in one smooth workflow, designed for Ethiopian businesses.</p>\n          <ul className=\"am-check-list\">\n            <li><i aria-hidden=\"true\">✓</i>0% commission on every appointment</li>\n            <li><i aria-hidden=\"true\">✓</i>Support in Amharic and English</li>\n            <li><i aria-hidden=\"true\">✓</i>No contract—cancel whenever you need</li>\n          </ul>\n        </div>\n\n        <aside className=\"am-offer-card\">\n          <span className=\"am-offer-tag\">BUSINESS STARTER + WEBSITE</span>\n          <div className=\"am-offer-price\"><strong>5,000</strong><div><b>birr</b><small>/ month*</small></div></div>\n          <s>normally 7,500 birr</s>\n          <h3>Everything you need to get started.</h3>\n          <ul>{included.map((item) => <li key={item}><i aria-hidden=\"true\">✓</i>{item}</li>)}</ul>\n          <small>2,000 birr setup fee · 0% commission</small>\n        </aside>\n      </div>\n\n      <div className=\"am-feature-band\">\n        <div className=\"am-section-head\"><p>WHY ASPIO</p><h2>Your familiar workday, with a much better rhythm.</h2></div>\n        <div className=\"am-feature-grid\">\n          {features.map((feature, index) => <article key={feature.title} className=\"am-feature\" style={{ [\"--i\" as string]: index } as React.CSSProperties}><span aria-hidden=\"true\">✓</span><h3>{feature.title}</h3><p>{feature.body}</p></article>)}\n        </div>\n      </div>\n\n      <div className=\"am-form-band\">\n        <div><p className=\"am-eyebrow\"><span />FREE DEMO</p><h2>See Business Starter + Website in action.</h2><p>A personal 30-minute walkthrough in Amharic or English, with no commitment.</p></div>\n        <Link className=\"am-business-demo-card\" href=\"/ethiopia/en/register\">\n          <span>01</span>\n          <div><small>PERSONAL DEMO</small><b>Open the registration form</b></div>\n          <i aria-hidden=\"true\">↗</i>\n        </Link>\n      </div>\n    </section>\n  );\n}\n",
+    "app/ethiopia/en/discover/page.tsx": "\"use client\";\n/* eslint-disable @next/next/no-img-element */\n\nimport { useMemo, useState } from \"react\";\nimport { placesEn } from \"../../data\";\n\nconst filters = [\"All\", \"Salons\", \"Barbers\", \"Spas\"];\n\nexport default function EthiopiaEnglishDiscover() {\n  const [filter, setFilter] = useState(\"All\");\n  const [query, setQuery] = useState(\"\");\n\n  const filtered = useMemo(() => {\n    const byType = filter === \"All\"\n      ? placesEn\n      : placesEn.filter((place) => filter === \"Barbers\" ? place.type === \"Barbershop\" : filter === \"Salons\" ? place.type === \"Hair salon\" : place.type.includes(\"spa\"));\n    if (!query.trim()) return byType;\n    const normalizedQuery = query.trim().toLowerCase();\n    return byType.filter((place) => `${place.name} ${place.area} ${place.type}`.toLowerCase().includes(normalizedQuery));\n  }, [filter, query]);\n\n  return (\n    <section className=\"am-page am-discover\">\n      <div className=\"am-page-head\">\n        <p>ASPIO MARKETPLACE</p>\n        <h1>Find your next favourite place.</h1>\n        <span>Verified professionals, transparent prices and appointment times you can see immediately.</span>\n      </div>\n\n      <div className=\"am-search\">\n        <span aria-hidden=\"true\">⌕</span>\n        <input aria-label=\"Search\" placeholder=\"Salon, service or neighbourhood...\" value={query} onChange={(event) => setQuery(event.target.value)} />\n        <button type=\"button\" onClick={() => setQuery(\"\")}>{query ? \"Clear\" : \"Search\"}</button>\n      </div>\n\n      <div className=\"am-filters\" role=\"tablist\" aria-label=\"Marketplace filters\">\n        {filters.map((item) => (\n          <button key={item} type=\"button\" role=\"tab\" aria-selected={filter === item} className={filter === item ? \"on\" : \"\"} onClick={() => setFilter(item)}>{item}</button>\n        ))}\n        <span className=\"am-count\">{filtered.length} results</span>\n      </div>\n\n      <div className=\"am-grid\">\n        {filtered.map((place) => (\n          <article className=\"am-card\" key={place.name}>\n            <div className=\"am-card-image\">\n              <img src={place.image} alt=\"\" />\n              <span className=\"am-card-tag\">{place.tag}</span>\n              <button type=\"button\" className=\"am-card-heart\" aria-label=\"Add to favourites\">♡</button>\n            </div>\n            <div className=\"am-card-body\">\n              <div className=\"am-card-rating\">{place.rating} / 5</div>\n              <p>{place.type}</p><h3>{place.name}</h3><small>⌖ {place.area}</small>\n              <footer><b>{place.price}</b><button type=\"button\">Book a time<span aria-hidden=\"true\">→</span></button></footer>\n            </div>\n          </article>\n        ))}\n      </div>\n\n      {filtered.length === 0 && <div className=\"am-empty\"><b>No results found.</b><p>Try another area or service.</p></div>}\n    </section>\n  );\n}\n",
+    "app/ethiopia/en/how-it-works/page.tsx": "import Link from \"next/link\";\n\nconst steps = [\n  { n: \"01\", title: \"Search\", body: \"Choose the right place by neighbourhood, price or service.\", icon: \"⌕\" },\n  { n: \"02\", title: \"Choose a time\", body: \"See each professional’s live availability before you book.\", icon: \"◷\" },\n  { n: \"03\", title: \"Confirm\", body: \"Receive your confirmation immediately by SMS and email.\", icon: \"✓\" },\n  { n: \"04\", title: \"Enjoy\", body: \"Show up for your appointment and leave the rest to us.\", icon: \"✓\" },\n];\n\nconst benefits = [\n  { title: \"Transparent pricing\", body: \"No hidden charges. Know the price before you confirm.\" },\n  { title: \"Instant confirmation\", body: \"Book in seconds and receive a reminder at the right time.\" },\n  { title: \"Verified professionals\", body: \"Every listed place is reviewed by the Aspio team.\" },\n  { title: \"Free cancellation\", body: \"Cancel up to 24 hours before your appointment without an extra fee.\" },\n];\n\nexport default function EthiopiaEnglishHowItWorks() {\n  return (\n    <section className=\"am-page am-how\">\n      <div className=\"am-page-head\">\n        <p>HOW IT WORKS</p><h1>Four steps. One appointment.</h1>\n        <span>Booking should not take time away from your day. Find and confirm the right appointment in a few minutes.</span>\n      </div>\n      <ol className=\"am-steps\">\n        {steps.map((step, index) => <li key={step.n} className=\"am-step\" style={{ [\"--i\" as string]: index } as React.CSSProperties}><div className=\"am-step-num\">{step.n}</div><div className=\"am-step-icon\" aria-hidden=\"true\">{step.icon}</div><h3>{step.title}</h3><p>{step.body}</p></li>)}\n      </ol>\n      <div className=\"am-benefits\">\n        <div className=\"am-section-head\"><p>WHY ASPIO</p><h2>A completely better booking experience.</h2></div>\n        <div className=\"am-benefit-grid\">{benefits.map((benefit) => <article key={benefit.title} className=\"am-benefit\"><i aria-hidden=\"true\">✓</i><h3>{benefit.title}</h3><p>{benefit.body}</p></article>)}</div>\n      </div>\n      <div className=\"am-cta-band\"><div><p>READY?</p><h2>Book your next appointment today.</h2></div><Link className=\"am-btn am-btn-light\" href=\"/ethiopia/en/discover\">Find a place<span aria-hidden=\"true\">↗</span></Link></div>\n    </section>\n  );\n}\n"
+  },
+  "bilingual_reference_sources": {}
+}

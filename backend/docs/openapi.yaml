@@ -1,0 +1,642 @@
+openapi: 3.1.0
+info:
+  title: Aspio API
+  version: 1.0.0
+  description: Marketplace, blog, lead, and admin API for Aspio Ethiopia.
+servers:
+  - url: http://localhost:18080/api/v1
+    description: Local Docker environment
+tags:
+  - name: Marketplace
+  - name: Gallery
+  - name: Featured Places
+  - name: Blog
+  - name: Leads
+  - name: Admin
+paths:
+  /salons:
+    get:
+      tags: [Marketplace]
+      summary: List published salons
+      parameters:
+        - $ref: '#/components/parameters/Locale'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+        - {name: q, in: query, schema: {type: string}}
+        - {name: category, in: query, schema: {$ref: '#/components/schemas/SalonCategory'}}
+        - {name: area, in: query, schema: {type: string}}
+      responses:
+        '200':
+          description: A page of published salons
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/PublicSalonPage'}
+  /salons/{slug}:
+    get:
+      tags: [Marketplace]
+      summary: Get one published salon
+      parameters:
+        - $ref: '#/components/parameters/Slug'
+        - $ref: '#/components/parameters/Locale'
+      responses:
+        '200':
+          description: Published salon
+          content: {application/json: {schema: {$ref: '#/components/schemas/PublicSalon'}}}
+        '404': {$ref: '#/components/responses/NotFound'}
+  /map/salons:
+    get:
+      tags: [Marketplace]
+      summary: List lightweight salon map pins
+      parameters:
+        - $ref: '#/components/parameters/Locale'
+        - {name: category, in: query, schema: {$ref: '#/components/schemas/SalonCategory'}}
+        - {name: area, in: query, schema: {type: string}}
+      responses:
+        '200': {description: Map pin collection}
+  /gallery:
+    get:
+      tags: [Gallery]
+      summary: List published public gallery media
+      parameters:
+        - $ref: '#/components/parameters/Locale'
+        - {name: kind, in: query, schema: {type: string, enum: [image, video]}}
+      responses:
+        '200': {description: Ordered image and video gallery items}
+        '422': {$ref: '#/components/responses/ValidationError'}
+  /featured-places:
+    get:
+      tags: [Featured Places]
+      summary: List active curated salon and barbershop partners
+      parameters:
+        - $ref: '#/components/parameters/Locale'
+      responses:
+        '200': {description: Ordered curated partners with localized copy}
+  /blog/posts:
+    get:
+      tags: [Blog]
+      summary: List published blog posts without full content
+      parameters:
+        - $ref: '#/components/parameters/Locale'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+        - {name: q, in: query, schema: {type: string}}
+        - {name: tag, in: query, schema: {type: string}}
+      responses:
+        '200':
+          description: A page of posts
+          content: {application/json: {schema: {$ref: '#/components/schemas/PublicPostPage'}}}
+  /blog/posts/{slug}:
+    get:
+      tags: [Blog]
+      summary: Get a published post with content and SEO fields
+      parameters:
+        - $ref: '#/components/parameters/Slug'
+        - $ref: '#/components/parameters/Locale'
+      responses:
+        '200': {description: Published post, content: {application/json: {schema: {$ref: '#/components/schemas/PublicPost'}}}}
+        '404': {$ref: '#/components/responses/NotFound'}
+  /leads:
+    post:
+      tags: [Leads]
+      summary: Save and queue a demo or contact request
+      requestBody:
+        required: true
+        content: {application/json: {schema: {$ref: '#/components/schemas/LeadInput'}}}
+      responses:
+        '202':
+          description: Persisted and queued
+          content: {application/json: {schema: {$ref: '#/components/schemas/LeadAccepted'}}}
+        '422': {$ref: '#/components/responses/ValidationError'}
+        '429': {description: Rate limited}
+  /admin/auth/login:
+    post:
+      tags: [Admin]
+      summary: Create a revocable admin session
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password]
+              properties: {email: {type: string, format: email}, password: {type: string, format: password}}
+      responses:
+        '200': {description: Session token and admin profile}
+        '401': {description: Invalid credentials}
+  /admin/auth/me:
+    get:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      responses: {'200': {description: Current administrator}, '401': {description: Unauthorized}}
+  /admin/auth/logout:
+    post:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      responses: {'204': {description: Session revoked}}
+  /admin/users:
+    get:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      summary: List administrator accounts
+      description: Super-admin access is required.
+      responses:
+        '200': {description: Administrator collection}
+        '403': {description: Super-admin access required}
+    post:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      summary: Create an administrator account
+      description: Super-admin access is required. Passwords are stored only as Argon2id hashes.
+      requestBody:
+        required: true
+        content: {application/json: {schema: {$ref: '#/components/schemas/AdminAccountCreate'}}}
+      responses:
+        '201': {description: Administrator created, content: {application/json: {schema: {$ref: '#/components/schemas/AdminUser'}}}}
+        '403': {description: Super-admin access required}
+        '409': {description: Email already exists}
+        '422': {$ref: '#/components/responses/ValidationError'}
+  /admin/users/{id}:
+    parameters: [{$ref: '#/components/parameters/ID'}]
+    put:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      summary: Update an administrator's profile, role, and access
+      description: Super-admin access is required. The active account cannot demote or deactivate itself, and the final active super admin is protected.
+      requestBody:
+        required: true
+        content: {application/json: {schema: {$ref: '#/components/schemas/AdminAccountInput'}}}
+      responses:
+        '200': {description: Administrator updated, content: {application/json: {schema: {$ref: '#/components/schemas/AdminUser'}}}}
+        '403': {description: Super-admin access required}
+        '409': {description: Protected access or email conflict}
+        '422': {$ref: '#/components/responses/ValidationError'}
+  /admin/users/{id}/password:
+    parameters: [{$ref: '#/components/parameters/ID'}]
+    post:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      summary: Set a temporary password and revoke the administrator's sessions
+      description: Super-admin access is required. The active super admin cannot reset its own password through this route.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [password]
+              properties: {password: {type: string, format: password, minLength: 12, maxLength: 256}}
+      responses:
+        '204': {description: Password changed and sessions revoked}
+        '403': {description: Super-admin access required}
+        '409': {description: Current account password is protected}
+        '422': {$ref: '#/components/responses/ValidationError'}
+  /admin/profile:
+    put:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      summary: Update the current administrator profile
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name, email]
+              properties:
+                name: {type: string, maxLength: 120}
+                email: {type: string, format: email, maxLength: 180}
+                phone: {type: string, maxLength: 40}
+                jobTitle: {type: string, maxLength: 120}
+      responses:
+        '200': {description: Updated profile, content: {application/json: {schema: {$ref: '#/components/schemas/AdminUser'}}}}
+        '422': {$ref: '#/components/responses/ValidationError'}
+  /admin/profile/avatar:
+    post:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      summary: Replace the current administrator profile picture
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [file]
+              properties: {file: {type: string, format: binary}}
+      responses:
+        '200': {description: Updated profile, content: {application/json: {schema: {$ref: '#/components/schemas/AdminUser'}}}}
+        '413': {description: Image is larger than 15 MB}
+        '415': {description: Unsupported image format}
+  /admin/locations/resolve:
+    post:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      summary: Resolve a Google Maps share link to an Addis Ababa coordinate
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [url]
+              properties: {url: {type: string, format: uri}}
+      responses:
+        '200':
+          description: Resolved Google Maps location
+          content: {application/json: {schema: {$ref: '#/components/schemas/GoogleMapsLocation'}}}
+        '422': {$ref: '#/components/responses/ValidationError'}
+  /admin/salons:
+    get:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      summary: List salons including drafts
+      responses: {'200': {description: Salon page}}
+    post:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      summary: Create a salon
+      requestBody: {required: true, content: {application/json: {schema: {$ref: '#/components/schemas/SalonInput'}}}}
+      responses: {'201': {description: Created salon}, '409': {description: Slug conflict}, '422': {$ref: '#/components/responses/ValidationError'}}
+  /admin/salons/{id}:
+    parameters: [{$ref: '#/components/parameters/ID'}]
+    get:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      responses: {'200': {description: Salon}, '404': {$ref: '#/components/responses/NotFound'}}
+    put:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      summary: Replace editable salon fields
+      requestBody: {required: true, content: {application/json: {schema: {$ref: '#/components/schemas/SalonInput'}}}}
+      responses: {'200': {description: Updated salon}, '422': {$ref: '#/components/responses/ValidationError'}}
+    delete:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      summary: Soft-delete a salon
+      responses: {'204': {description: Deleted}}
+  /admin/salons/{id}/media:
+    parameters: [{$ref: '#/components/parameters/ID'}]
+    get:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      summary: List a salon's uploaded media
+      responses:
+        '200':
+          description: Ordered salon media
+          content: {application/json: {schema: {type: array, items: {$ref: '#/components/schemas/SalonMedia'}}}}
+    post:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      summary: Upload one salon image or video
+      description: JPEG, PNG, WebP, and GIF images are limited to 15 MB. MP4, WebM, and MOV videos are limited to 150 MB.
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file: {type: string, format: binary}
+                altText: {type: string, maxLength: 300}
+      responses:
+        '201': {description: Uploaded media, content: {application/json: {schema: {$ref: '#/components/schemas/SalonMedia'}}}}
+        '413': {description: Upload is too large}
+        '415': {description: Unsupported media type}
+  /admin/salons/{id}/media/{mediaId}:
+    parameters:
+      - {$ref: '#/components/parameters/ID'}
+      - {name: mediaId, in: path, required: true, schema: {type: string, format: uuid}}
+    delete:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      summary: Delete one salon image or video
+      responses: {'204': {description: Media deleted}, '404': {$ref: '#/components/responses/NotFound'}}
+  /admin/gallery:
+    get:
+      tags: [Admin, Gallery]
+      security: [{bearerAuth: []}]
+      summary: List public-gallery media including drafts
+      parameters:
+        - {name: kind, in: query, schema: {type: string, enum: [image, video]}}
+      responses: {'200': {description: Ordered gallery media}}
+  /admin/gallery/{kind}:
+    parameters:
+      - {name: kind, in: path, required: true, schema: {type: string, enum: [image, video]}}
+    post:
+      tags: [Admin, Gallery]
+      security: [{bearerAuth: []}]
+      summary: Upload one image or video into its public gallery
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file: {type: string, format: binary}
+                titleAm: {type: string, maxLength: 180}
+                titleEn: {type: string, maxLength: 180}
+                captionAm: {type: string, maxLength: 1200}
+                captionEn: {type: string, maxLength: 1200}
+                status: {type: string, enum: [draft, published], default: published}
+                sortOrder: {type: integer}
+      responses:
+        '201': {description: Uploaded gallery media}
+        '413': {description: Upload is too large}
+        '415': {description: Unsupported or mismatched media type}
+  /admin/gallery/items/{id}:
+    parameters: [{$ref: '#/components/parameters/ID'}]
+    put:
+      tags: [Admin, Gallery]
+      security: [{bearerAuth: []}]
+      summary: Update gallery copy, publishing state, and order
+      responses: {'200': {description: Updated gallery media}, '422': {$ref: '#/components/responses/ValidationError'}}
+    delete:
+      tags: [Admin, Gallery]
+      security: [{bearerAuth: []}]
+      summary: Delete gallery media and its stored file
+      responses: {'204': {description: Deleted}, '404': {$ref: '#/components/responses/NotFound'}}
+  /admin/featured-places:
+    get:
+      tags: [Admin, Featured Places]
+      security: [{bearerAuth: []}]
+      summary: List curated partners including hidden entries
+      responses: {'200': {description: Ordered featured places}}
+    post:
+      tags: [Admin, Featured Places]
+      security: [{bearerAuth: []}]
+      summary: Add a published salon or barbershop to Featured Places
+      responses: {'201': {description: Created featured place}, '422': {$ref: '#/components/responses/ValidationError'}}
+  /admin/featured-places/{id}:
+    parameters: [{$ref: '#/components/parameters/ID'}]
+    put:
+      tags: [Admin, Featured Places]
+      security: [{bearerAuth: []}]
+      summary: Update a curated partner
+      responses: {'200': {description: Updated featured place}, '422': {$ref: '#/components/responses/ValidationError'}}
+    delete:
+      tags: [Admin, Featured Places]
+      security: [{bearerAuth: []}]
+      summary: Remove a partner from the curated collection
+      responses: {'204': {description: Deleted}, '404': {$ref: '#/components/responses/NotFound'}}
+  /admin/blog/posts:
+    get:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      responses: {'200': {description: Blog post page}}
+    post:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      requestBody: {required: true, content: {application/json: {schema: {$ref: '#/components/schemas/PostInput'}}}}
+      responses: {'201': {description: Created post}, '422': {$ref: '#/components/responses/ValidationError'}}
+  /admin/blog/posts/{id}:
+    parameters: [{$ref: '#/components/parameters/ID'}]
+    get:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      responses: {'200': {description: Blog post}}
+    put:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      requestBody: {required: true, content: {application/json: {schema: {$ref: '#/components/schemas/PostInput'}}}}
+      responses: {'200': {description: Updated post}}
+    delete:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      responses: {'204': {description: Soft-deleted}}
+  /admin/leads:
+    get:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      parameters:
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
+        - {name: status, in: query, schema: {$ref: '#/components/schemas/LeadStatus'}}
+        - {name: q, in: query, schema: {type: string}}
+      responses: {'200': {description: Lead page}}
+  /admin/leads/{id}/status:
+    patch:
+      tags: [Admin]
+      security: [{bearerAuth: []}]
+      parameters: [{$ref: '#/components/parameters/ID'}]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [status]
+              properties: {status: {$ref: '#/components/schemas/LeadStatus'}}
+      responses: {'200': {description: Updated lead}, '422': {$ref: '#/components/responses/ValidationError'}}
+components:
+  securitySchemes:
+    bearerAuth: {type: http, scheme: bearer}
+  parameters:
+    ID: {name: id, in: path, required: true, schema: {type: string, format: uuid}}
+    Slug: {name: slug, in: path, required: true, schema: {type: string, pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$'}}
+    Locale: {name: locale, in: query, schema: {type: string, enum: [am, en], default: en}}
+    Page: {name: page, in: query, schema: {type: integer, minimum: 1, default: 1}}
+    PageSize: {name: pageSize, in: query, schema: {type: integer, minimum: 1, maximum: 100, default: 24}}
+  responses:
+    NotFound: {description: Record not found}
+    ValidationError:
+      description: Validation failed
+      content: {application/json: {schema: {$ref: '#/components/schemas/ErrorEnvelope'}}}
+  schemas:
+    AdminUser:
+      type: object
+      required: [id, email, name, phone, jobTitle, avatarUrl, role, active]
+      properties:
+        id: {type: string, format: uuid}
+        email: {type: string, format: email}
+        name: {type: string}
+        phone: {type: string}
+        jobTitle: {type: string}
+        avatarUrl: {type: string}
+        role: {type: string, enum: [super_admin, admin]}
+        active: {type: boolean}
+        lastLoginAt: {type: string, format: date-time}
+        createdAt: {type: string, format: date-time}
+        updatedAt: {type: string, format: date-time}
+    AdminAccountInput:
+      type: object
+      required: [email, name, phone, jobTitle, role, active]
+      properties:
+        email: {type: string, format: email, maxLength: 180}
+        name: {type: string, maxLength: 120}
+        phone: {type: string, maxLength: 40}
+        jobTitle: {type: string, maxLength: 120}
+        role: {type: string, enum: [super_admin, admin]}
+        active: {type: boolean}
+    AdminAccountCreate:
+      type: object
+      required: [email, name, phone, jobTitle, role, password]
+      properties:
+        email: {type: string, format: email, maxLength: 180}
+        name: {type: string, maxLength: 120}
+        phone: {type: string, maxLength: 40}
+        jobTitle: {type: string, maxLength: 120}
+        role: {type: string, enum: [super_admin, admin]}
+        password: {type: string, format: password, minLength: 12, maxLength: 256}
+    SalonCategory: {type: string, enum: [salon, barbershop, spa, nails, wellness, other]}
+    PublishStatus: {type: string, enum: [draft, published, archived]}
+    LeadStatus: {type: string, enum: [new, contacted, qualified, converted, closed, spam]}
+    Coordinates:
+      type: object
+      required: [latitude, longitude]
+      properties: {latitude: {type: number}, longitude: {type: number}}
+    GoogleMapsLocation:
+      type: object
+      required: [url, latitude, longitude]
+      properties:
+        url: {type: string, format: uri}
+        latitude: {type: number}
+        longitude: {type: number}
+    PublicSalon:
+      type: object
+      required: [id, slug, name, category, area, latitude, longitude, reviewCount, openingHours, amenities]
+      properties:
+        id: {type: string, format: uuid}
+        slug: {type: string}
+        name: {type: string}
+        description: {type: string}
+        category: {$ref: '#/components/schemas/SalonCategory'}
+        area: {type: string}
+        address: {type: string}
+        latitude: {type: number}
+        longitude: {type: number}
+        phone: {type: string}
+        email: {type: string}
+        websiteUrl: {type: string}
+        bookingUrl: {type: string}
+        imageUrl: {type: string}
+        priceFromEtb: {type: integer, minimum: 0}
+        rating: {type: number, minimum: 0, maximum: 5}
+        reviewCount: {type: integer, minimum: 0}
+        tag: {type: string}
+        openingHours: {type: object, additionalProperties: true}
+        amenities: {type: array, items: {type: string}}
+        media: {type: array, items: {$ref: '#/components/schemas/SalonMedia'}}
+    SalonMedia:
+      type: object
+      required: [id, salonId, kind, url, mimeType, originalName, sizeBytes, sortOrder, createdAt]
+      properties:
+        id: {type: string, format: uuid}
+        salonId: {type: string, format: uuid}
+        kind: {type: string, enum: [image, video]}
+        url: {type: string, example: /uploads/9fdbd91f.webp}
+        mimeType: {type: string}
+        originalName: {type: string}
+        altText: {type: string}
+        sizeBytes: {type: integer, format: int64}
+        sortOrder: {type: integer}
+        createdAt: {type: string, format: date-time}
+    PublicSalonPage:
+      type: object
+      required: [items, page, pageSize, total]
+      properties:
+        items: {type: array, items: {$ref: '#/components/schemas/PublicSalon'}}
+        page: {type: integer}
+        pageSize: {type: integer}
+        total: {type: integer}
+    SalonInput:
+      type: object
+      required: [slug, status, category, googleMapsUrl]
+      allOf:
+        - anyOf: [{required: [nameAm]}, {required: [nameEn]}]
+        - anyOf: [{required: [areaAm]}, {required: [areaEn]}]
+      properties:
+        slug: {type: string}
+        status: {$ref: '#/components/schemas/PublishStatus'}
+        category: {$ref: '#/components/schemas/SalonCategory'}
+        nameAm: {type: string}
+        nameEn: {type: string}
+        descriptionAm: {type: string}
+        descriptionEn: {type: string}
+        areaAm: {type: string}
+        areaEn: {type: string}
+        address: {type: string}
+        googleMapsUrl: {type: string, format: uri, description: Google Maps share link; the server resolves and validates coordinates}
+        latitude: {type: number}
+        longitude: {type: number}
+        phone: {type: string}
+        email: {type: string, format: email}
+        websiteUrl: {type: string, format: uri}
+        bookingUrl: {type: string, format: uri}
+        imageUrl: {type: string, format: uri-reference}
+        priceFromEtb: {type: integer, minimum: 0}
+        rating: {type: number, minimum: 0, maximum: 5}
+        reviewCount: {type: integer, minimum: 0}
+        tagAm: {type: string}
+        tagEn: {type: string}
+        openingHours: {type: object, additionalProperties: true}
+        amenities: {type: array, items: {type: string}}
+        sortOrder: {type: integer}
+    PublicPost:
+      type: object
+      properties:
+        id: {type: string, format: uuid}
+        slug: {type: string}
+        title: {type: string}
+        excerpt: {type: string}
+        content: {type: string, description: Markdown-ready content}
+        coverImageUrl: {type: string}
+        authorName: {type: string}
+        tags: {type: array, items: {type: string}}
+        seoTitle: {type: string}
+        seoDescription: {type: string}
+        publishedAt: {type: string, format: date-time}
+    PublicPostPage:
+      type: object
+      properties:
+        items: {type: array, items: {$ref: '#/components/schemas/PublicPost'}}
+        page: {type: integer}
+        pageSize: {type: integer}
+        total: {type: integer}
+    PostInput:
+      type: object
+      required: [slug, status]
+      anyOf: [{required: [titleAm]}, {required: [titleEn]}]
+      properties:
+        slug: {type: string}
+        status: {$ref: '#/components/schemas/PublishStatus'}
+        titleAm: {type: string}
+        titleEn: {type: string}
+        excerptAm: {type: string}
+        excerptEn: {type: string}
+        contentAm: {type: string}
+        contentEn: {type: string}
+        coverImageUrl: {type: string}
+        authorName: {type: string}
+        tags: {type: array, maxItems: 20, items: {type: string}}
+        seoTitleAm: {type: string}
+        seoTitleEn: {type: string}
+        seoDescriptionAm: {type: string}
+        seoDescriptionEn: {type: string}
+    LeadInput:
+      type: object
+      required: [kind, source, name, email, phone]
+      properties:
+        kind: {type: string, enum: [demo, contact]}
+        source: {type: string}
+        locale: {type: string, example: am-ET}
+        name: {type: string, maxLength: 100}
+        email: {type: string, format: email}
+        phone: {type: string, maxLength: 40}
+        businessName: {type: string, maxLength: 140}
+        message: {type: string, maxLength: 2500}
+        website: {type: string, description: Honeypot; legitimate clients leave empty}
+    LeadAccepted:
+      type: object
+      properties: {ok: {type: boolean, const: true}, submissionId: {type: string, format: uuid}, status: {type: string, const: queued}}
+    ErrorEnvelope:
+      type: object
+      properties:
+        error:
+          type: object
+          properties:
+            code: {type: string}
+            message: {type: string}
+            fields: {type: object, additionalProperties: {type: string}}

@@ -1,0 +1,419 @@
+{
+  "document_purpose": "Amharic UX copy review for the Aspio Ethiopia website",
+  "project": "Aspio Ethiopia",
+  "section": "Part 2: remaining landing page copy",
+  "instructions_for_gemini": [
+    "Act as a senior Ethiopian Amharic UX writer and localization editor based in Addis Ababa.",
+    "Rewrite every current_amharic value into natural, contemporary, polished Amharic suitable for an Ethiopian technology and beauty marketplace.",
+    "Use the matching English reference source to recover the intended meaning. Do not translate literally when a natural Ethiopian expression is clearer.",
+    "Keep the language concise enough to fit buttons, cards, navigation, forms, calendars, and mobile screens.",
+    "Preserve Aspio, Business Starter, Website, CRM, API, URLs, email addresses, prices, numbers, dates, and time values exactly unless the existing Amharic numeral itself is intentional.",
+    "Keep accepted Addis Ababa neighborhood names and Ethiopian personal names correctly spelled.",
+    "Never introduce a star character or a star-rating symbol.",
+    "Do not edit id, source_file, source_line, source_kind, current_amharic, nearby_context, English reference sources, or the JSON structure.",
+    "Fill revised_amharic for every item. Do not leave any item blank, omit IDs, merge items, add commentary, or place markup/code in a translation.",
+    "Return the completed JSON as a downloadable file named amharic-copy-reviewed.json. Do not paste a shortened or partial result into chat."
+  ],
+  "continuation_note": "Part 1 has already been applied. Complete every item in this smaller continuation file and preserve every ID.",
+  "product_context": {
+    "brand": "Aspio",
+    "market": "Ethiopia",
+    "audience": "Salon, barbershop, nail studio, spa owners and their customers in Addis Ababa",
+    "offer": "Business Starter + Website: online booking, customer records, reminders, reports, and a business website",
+    "tone": "Clear, warm, trustworthy, modern, locally natural, and professional"
+  },
+  "item_count": 43,
+  "translation_items": [
+    {
+      "id": "app/ethiopia/page.tsx#147",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 341,
+      "source_kind": "visible page text",
+      "current_amharic": "ASPIO / በቁጥር",
+      "nearby_context": "<section className=\"am-stats\" data-am-reveal> <div className=\"am-stats-intro\"><span>ASPIO / በቁጥር</span><p>የከተማዋ የውበት<br />ንግድ በአንድ ቦታ።</p></div> {stats.map(([value, label], i) => (",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#148",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 341,
+      "source_kind": "visible page text",
+      "current_amharic": "የከተማዋ የውበት",
+      "nearby_context": "\"am-stats\" data-am-reveal> <div className=\"am-stats-intro\"><span>ASPIO / በቁጥር</span><p>የከተማዋ የውበት<br />ንግድ በአንድ ቦታ።</p></div> {stats.map(([value, label], i) => ( <div key={la",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#149",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 341,
+      "source_kind": "visible page text",
+      "current_amharic": "ንግድ በአንድ ቦታ።",
+      "nearby_context": "am-reveal> <div className=\"am-stats-intro\"><span>ASPIO / በቁጥር</span><p>የከተማዋ የውበት<br />ንግድ በአንድ ቦታ።</p></div> {stats.map(([value, label], i) => ( <div key={label} className=\"am",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#150",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 353,
+      "source_kind": "visible page text",
+      "current_amharic": "የኢትዮጵያ የቀን መቁጠሪያ",
+      "nearby_context": "reveal> <div className=\"am-calendar-copy\"> <p className=\"am-eyebrow\"><span />የኢትዮጵያ የቀን መቁጠሪያ</p> <h2>ቀጠሮዎን በኢትዮጵያ<br /><em>ቀን መቁጠሪያ</em> ይያዙ።</h2> <p className=\"am-int",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#151",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 354,
+      "source_kind": "visible page text",
+      "current_amharic": "ቀጠሮዎን በኢትዮጵያ",
+      "nearby_context": "calendar-copy\"> <p className=\"am-eyebrow\"><span />የኢትዮጵያ የቀን መቁጠሪያ</p> <h2>ቀጠሮዎን በኢትዮጵያ<br /><em>ቀን መቁጠሪያ</em> ይያዙ።</h2> <p className=\"am-intro\"> 13 ወራት፣ የአማርኛ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#152",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 354,
+      "source_kind": "visible page text",
+      "current_amharic": "ቀን መቁጠሪያ",
+      "nearby_context": "<p className=\"am-eyebrow\"><span />የኢትዮጵያ የቀን መቁጠሪያ</p> <h2>ቀጠሮዎን በኢትዮጵያ<br /><em>ቀን መቁጠሪያ</em> ይያዙ።</h2> <p className=\"am-intro\"> 13 ወራት፣ የአማርኛ ስም እና በቀጥታ የሚታዩ ክፍ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#153",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 354,
+      "source_kind": "visible page text",
+      "current_amharic": "ይያዙ።",
+      "nearby_context": "me=\"am-eyebrow\"><span />የኢትዮጵያ የቀን መቁጠሪያ</p> <h2>ቀጠሮዎን በኢትዮጵያ<br /><em>ቀን መቁጠሪያ</em> ይያዙ።</h2> <p className=\"am-intro\"> 13 ወራት፣ የአማርኛ ስም እና በቀጥታ የሚታዩ ክፍት ሰዓቶች። እን",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#154",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 356,
+      "source_kind": "visible page text",
+      "current_amharic": "13 ወራት፣ የአማርኛ ስም እና በቀጥታ የሚታዩ ክፍት ሰዓቶች። እንደ ሰፈር ስሜት፣ እንደ ዓለም አቀፍ ጥራት።",
+      "nearby_context": "2>ቀጠሮዎን በኢትዮጵያ<br /><em>ቀን መቁጠሪያ</em> ይያዙ።</h2> <p className=\"am-intro\"> 13 ወራት፣ የአማርኛ ስም እና በቀጥታ የሚታዩ ክፍት ሰዓቶች። እንደ ሰፈር ስሜት፣ እንደ ዓለም አቀፍ ጥራት። </p> <div className=\"am-calendar-legend\"> <span><i className=\"",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#155",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 359,
+      "source_kind": "visible page text",
+      "current_amharic": "ተመርጧል",
+      "nearby_context": "<div className=\"am-calendar-legend\"> <span><i className=\"dot dot-purple\" />ተመርጧል</span> <span><i className=\"dot dot-today\" />ዛሬ</span> <span><i classNa",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#156",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 360,
+      "source_kind": "visible page text",
+      "current_amharic": "ዛሬ",
+      "nearby_context": "><i className=\"dot dot-purple\" />ተመርጧል</span> <span><i className=\"dot dot-today\" />ዛሬ</span> <span><i className=\"dot dot-busy\" />ተያዘ</span> <span><i classNa",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#157",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 361,
+      "source_kind": "visible page text",
+      "current_amharic": "ተያዘ",
+      "nearby_context": "<span><i className=\"dot dot-today\" />ዛሬ</span> <span><i className=\"dot dot-busy\" />ተያዘ</span> <span><i className=\"dot dot-free\" />ክፍት</span> </div> <",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#158",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 362,
+      "source_kind": "visible page text",
+      "current_amharic": "ክፍት",
+      "nearby_context": "<span><i className=\"dot dot-busy\" />ተያዘ</span> <span><i className=\"dot dot-free\" />ክፍት</span> </div> <div className=\"am-calendar-summary\"> <div>",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#159",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 366,
+      "source_kind": "visible page text",
+      "current_amharic": "የተመረጠው ቀን",
+      "nearby_context": "</div> <div className=\"am-calendar-summary\"> <div> <small>የተመረጠው ቀን</small> <b>{ethMonths[month]} {selectedDay}፣ 2018</b> </div>",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#160",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 367,
+      "source_kind": "visible page text",
+      "current_amharic": "፣ 2018",
+      "nearby_context": "<div> <small>የተመረጠው ቀን</small> <b>{ethMonths[month]} {selectedDay}፣ 2018</b> </div> <div> <small>ክፍት ሰዓቶች</small> <",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#161",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 370,
+      "source_kind": "visible page text",
+      "current_amharic": "ክፍት ሰዓቶች",
+      "nearby_context": "nths[month]} {selectedDay}፣ 2018</b> </div> <div> <small>ክፍት ሰዓቶች</small> <b>{availableCount} / {timeSlots.length}</b> </div>",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#162",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 382,
+      "source_kind": "code string",
+      "current_amharic": "የቀደመ ወር",
+      "nearby_context": "al-nav\" onClick={() => setMonth((m) => (m + 12) % 13)} aria-label=\"የቀደመ ወር\" >‹</button> <div className=\"am-cal-title\"> <strong>{eth",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#163",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 386,
+      "source_kind": "visible page text",
+      "current_amharic": "2018 ዓ.ም · Ethiopian Calendar",
+      "nearby_context": "lassName=\"am-cal-title\"> <strong>{ethMonths[month]}</strong> <span>2018 ዓ.ም · Ethiopian Calendar</span> </div> <button type=\"button\" classN",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#164",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 392,
+      "source_kind": "code string",
+      "current_amharic": "ቀጣይ ወር",
+      "nearby_context": "cal-nav\" onClick={() => setMonth((m) => (m + 1) % 13)} aria-label=\"ቀጣይ ወር\" >›</button> </div> <div className=\"am-cal-months\">",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#165",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 455,
+      "source_kind": "visible page text",
+      "current_amharic": "ማጠቃለያ",
+      "nearby_context": "</div> <div className=\"am-cal-cta\"> <div> <small>ማጠቃለያ</small> <b> {ethMonths[month]} {selectedDay}፣ 2018",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#166",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 457,
+      "source_kind": "visible page text",
+      "current_amharic": "፣ 2018",
+      "nearby_context": "<small>ማጠቃለያ</small> <b> {ethMonths[month]} {selectedDay}፣ 2018 {selectedSlot >= 0 && !(selectedSlot >= availableCount) ? ` · ${timeSlots[sele",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#167",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 462,
+      "source_kind": "visible page text",
+      "current_amharic": "ቀጠሮ አረጋግጥ",
+      "nearby_context": "n am-btn-primary\" disabled={selectedSlot < 0 || selectedSlot >= availableCount}> ቀጠሮ አረጋግጥ<span aria-hidden=\"true\">↗</span> </button> </div> </div> <",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#168",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 471,
+      "source_kind": "visible page text",
+      "current_amharic": "የከተማዋ ማዕዘኖች",
+      "nearby_context": "reveal> <div className=\"am-section-head am-hoods-head\"> <div> <p>የከተማዋ ማዕዘኖች</p> <h2>በአዲስ አበባ የቀጣይ ቀጠሮዎ<br />በአቅራቢያ ነው።</h2> </div> <p clas",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#169",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 472,
+      "source_kind": "visible page text",
+      "current_amharic": "በአዲስ አበባ የቀጣይ ቀጠሮዎ",
+      "nearby_context": "am-section-head am-hoods-head\"> <div> <p>የከተማዋ ማዕዘኖች</p> <h2>በአዲስ አበባ የቀጣይ ቀጠሮዎ<br />በአቅራቢያ ነው።</h2> </div> <p className=\"am-hoods-lead\">10 ማዕዘኖች። 400+ ቦታ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#170",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 472,
+      "source_kind": "visible page text",
+      "current_amharic": "በአቅራቢያ ነው።",
+      "nearby_context": "-head\"> <div> <p>የከተማዋ ማዕዘኖች</p> <h2>በአዲስ አበባ የቀጣይ ቀጠሮዎ<br />በአቅራቢያ ነው።</h2> </div> <p className=\"am-hoods-lead\">10 ማዕዘኖች። 400+ ቦታዎች። አንድ አጭር ጉዞ።<",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#171",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 474,
+      "source_kind": "visible page text",
+      "current_amharic": "10 ማዕዘኖች። 400+ ቦታዎች። አንድ አጭር ጉዞ።",
+      "nearby_context": "አዲስ አበባ የቀጣይ ቀጠሮዎ<br />በአቅራቢያ ነው።</h2> </div> <p className=\"am-hoods-lead\">10 ማዕዘኖች። 400+ ቦታዎች። አንድ አጭር ጉዞ።</p> </div> <div className=\"am-hood-grid\"> {neighborhoods.map((h, i)",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#172",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 487,
+      "source_kind": "visible page text",
+      "current_amharic": "ቦታዎች",
+      "nearby_context": "div className=\"am-hood-body\"> <b>{h.name}</b> <small>{h.count} ቦታዎች</small> </div> {h.trend && <em>ተወዳጅ</em>} <i aria-hi",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#173",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 489,
+      "source_kind": "visible page text",
+      "current_amharic": "ተወዳጅ",
+      "nearby_context": "<small>{h.count} ቦታዎች</small> </div> {h.trend && <em>ተወዳጅ</em>} <i aria-hidden=\"true\">→</i> </button> ))} </",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#174",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 499,
+      "source_kind": "visible page text",
+      "current_amharic": "የተመረጡ ቦታዎች",
+      "nearby_context": "eveal> <div className=\"am-section-head am-market-head\"> <div> <p>የተመረጡ ቦታዎች</p> <h2>የከተማዋ ተወዳጅ ስፍራዎች።</h2> </div> <Link className=\"am-see-",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#175",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 500,
+      "source_kind": "visible page text",
+      "current_amharic": "የከተማዋ ተወዳጅ ስፍራዎች።",
+      "nearby_context": "am-section-head am-market-head\"> <div> <p>የተመረጡ ቦታዎች</p> <h2>የከተማዋ ተወዳጅ ስፍራዎች።</h2> </div> <Link className=\"am-see-all\" href=\"/ethiopia/discover\">ሁሉንም ይመ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#176",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 502,
+      "source_kind": "visible page text",
+      "current_amharic": "ሁሉንም ይመልከቱ",
+      "nearby_context": "ስፍራዎች።</h2> </div> <Link className=\"am-see-all\" href=\"/ethiopia/discover\">ሁሉንም ይመልከቱ<span aria-hidden=\"true\">→</span></Link> </div> <div className=\"am-market-grid\"",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#177",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 522,
+      "source_kind": "visible page text",
+      "current_amharic": "ጊዜ ይያዙ",
+      "nearby_context": "<footer> <b>{place.price}</b> <button type=\"button\">ጊዜ ይያዙ<span aria-hidden=\"true\">→</span></button> </footer> </div>",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#178",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 559,
+      "source_kind": "template text",
+      "current_amharic": "ምስክርነት ",
+      "nearby_context": "timonial} onClick={() => setActiveTestimonial(i)} aria-label={`ምስክርነት ${i + 1}`} /> ))} </div> </div> </section>",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#179",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 568,
+      "source_kind": "visible page text",
+      "current_amharic": "የሚቀጥለው ደረጃ",
+      "nearby_context": "assName=\"am-section-head\" style={{ margin: \"0 auto 44px\", textAlign: \"center\" }}> <p>የሚቀጥለው ደረጃ</p> <h2>የተሟላ ስርዓት፣ በአንድ ቦታ።</h2> </div> <div className=\"am-highlight",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#180",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 569,
+      "source_kind": "visible page text",
+      "current_amharic": "የተሟላ ስርዓት፣ በአንድ ቦታ።",
+      "nearby_context": "le={{ margin: \"0 auto 44px\", textAlign: \"center\" }}> <p>የሚቀጥለው ደረጃ</p> <h2>የተሟላ ስርዓት፣ በአንድ ቦታ።</h2> </div> <div className=\"am-highlight-grid\"> {highlights.map((h,",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#181",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 582,
+      "source_kind": "visible page text",
+      "current_amharic": "ተጨማሪ ይመልከቱ",
+      "nearby_context": "h.tag}</span> <h3>{h.title}</h3> <p>{h.body}</p> <em>ተጨማሪ ይመልከቱ<i aria-hidden=\"true\">→</i></em> </Link> ))} </div> </secti",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#182",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 590,
+      "source_kind": "visible page text",
+      "current_amharic": "ተደጋግመው የሚጠየቁ",
+      "nearby_context": "me=\"am-faq\" data-am-reveal> <div className=\"am-section-head am-faq-head\"> <p>ተደጋግመው የሚጠየቁ</p> <h2>ጥያቄዎ ካለ፣ መልሱ እዚህ ነው።</h2> </div> <ul className=\"am-faq-list\"",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#183",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 591,
+      "source_kind": "visible page text",
+      "current_amharic": "ጥያቄዎ ካለ፣ መልሱ እዚህ ነው።",
+      "nearby_context": "<div className=\"am-section-head am-faq-head\"> <p>ተደጋግመው የሚጠየቁ</p> <h2>ጥያቄዎ ካለ፣ መልሱ እዚህ ነው።</h2> </div> <ul className=\"am-faq-list\"> {faqs.map((f, i) => {",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#184",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 617,
+      "source_kind": "visible page text",
+      "current_amharic": "ስለ ውበት፣ ስለ ጊዜ፣ ስለ ሰላም",
+      "nearby_context": "00%\" fill=\"url(#am-habesha)\" /></svg> </div> <p className=\"am-eyebrow\"><span />ስለ ውበት፣ ስለ ጊዜ፣ ስለ ሰላም</p> <blockquote className=\"am-culture-quote\"> <p> <em>“</em>",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#185",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 621,
+      "source_kind": "visible page text",
+      "current_amharic": "እንደ ቡና ሥነ-ሥርዓት ቀስ ብሎ የሚደረግ፣",
+      "nearby_context": "<blockquote className=\"am-culture-quote\"> <p> <em>“</em> እንደ ቡና ሥነ-ሥርዓት ቀስ ብሎ የሚደረግ፣<br /> እንደ ንጋት አየር ንጹህ የሆነ ቀጠሮ። <em>”</em> </p> <fo",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#186",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 622,
+      "source_kind": "visible page text",
+      "current_amharic": "እንደ ንጋት አየር ንጹህ የሆነ ቀጠሮ።",
+      "nearby_context": "<p> <em>“</em> እንደ ቡና ሥነ-ሥርዓት ቀስ ብሎ የሚደረግ፣<br /> እንደ ንጋት አየር ንጹህ የሆነ ቀጠሮ። <em>”</em> </p> <footer>— የአስፒዮ ፍልስፍና</footer> </block",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#187",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 625,
+      "source_kind": "visible page text",
+      "current_amharic": "— የአስፒዮ ፍልስፍና",
+      "nearby_context": "> እንደ ንጋት አየር ንጹህ የሆነ ቀጠሮ። <em>”</em> </p> <footer>— የአስፒዮ ፍልስፍና</footer> </blockquote> <div className=\"am-culture-cta\"> <Link classN",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#188",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 628,
+      "source_kind": "visible page text",
+      "current_amharic": "ጉዞዎን ይጀምሩ",
+      "nearby_context": "=\"am-culture-cta\"> <Link className=\"am-btn am-btn-primary\" href=\"/ethiopia/register\">ጉዞዎን ይጀምሩ<span aria-hidden=\"true\">↗</span></Link> <Link className=\"am-btn am-btn-text\" href=\"/",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/page.tsx#189",
+      "source_file": "app/ethiopia/page.tsx",
+      "source_line": 629,
+      "source_kind": "visible page text",
+      "current_amharic": "ቦታዎችን ይመልከቱ",
+      "nearby_context": "<Link className=\"am-btn am-btn-text\" href=\"/ethiopia/discover\"><i aria-hidden=\"true\">▶</i>ቦታዎችን ይመልከቱ</Link> </div> </section> </> ); }",
+      "revised_amharic": ""
+    }
+  ],
+  "english_reference_sources": {
+    "app/ethiopia/en/page.tsx": "﻿\"use client\";\n/* eslint-disable @next/next/no-img-element */\n\nimport Link from \"next/link\";\nimport { useEffect, useMemo, useState } from \"react\";\nimport AddisMap from \"../components/AddisMap\";\nimport { placesEn as places } from \"../data\";\nimport { addisAreas, getAreaSalons } from \"../mapData\";\n\nconst services = [\n  { icon: \"✂\", name: \"Haircut & styling\", meta: \"60 minutes · 450 birr\" },\n  { icon: \"◇\", name: \"Hair colour\", meta: \"120 minutes · 900 birr\" },\n  { icon: \"◎\", name: \"Consultation\", meta: \"20 minutes · free\" },\n];\n\nconst highlights = [\n  { href: \"/ethiopia/en/discover\", tag: \"MARKETPLACE\", title: \"The city’s best places\", body: \"Explore verified salons, barbershops and spas across Addis Ababa.\" },\n  { href: \"/ethiopia/en/how-it-works\", tag: \"HOW IT WORKS\", title: \"Three steps. One appointment.\", body: \"Search, choose a time and receive your confirmation.\" },\n  { href: \"/ethiopia/en/business\", tag: \"FOR BUSINESS\", title: \"Fill your chairs with clients\", body: \"Business Starter with a website made for your business.\" },\n];\n\nconst ethMonths = [\n  \"Meskerem\", \"Tikimt\", \"Hidar\", \"Tahsas\", \"Tir\", \"Yekatit\",\n  \"Megabit\", \"Miyazya\", \"Ginbot\", \"Sene\", \"Hamle\", \"Nehase\", \"Pagume\",\n];\nconst ethWeekdays = [\"Mon\", \"Tue\", \"Wed\", \"Thu\", \"Fri\", \"Sat\", \"Sun\"];\nconst timeSlots = [\"09:00\", \"10:30\", \"12:00\", \"13:30\", \"15:00\", \"16:30\", \"18:00\"];\nconst heroDays = [\n  { day: \"Today\", date: \"15\", month: \"Sene\" },\n  { day: \"Tomorrow\", date: \"16\", month: \"Sene\" },\n  { day: \"Wednesday\", date: \"17\", month: \"Sene\" },\n];\nconst heroTimes = [\"09:30\", \"11:00\", \"13:30\", \"15:00\", \"16:30\", \"18:00\"];\nconst marqueeWords = [\"BEAUTY\", \"SALON\", \"BARBER\", \"SPA\", \"BOOKING\", \"CONFIDENCE\", \"MODERN\", \"ASPIO\", \"ETHIOPIA\"];\nconst featured = places.slice(0, 6);\n\nconst cityNodes = addisAreas.map((area) => ({ ...area, name: area.nameEn }));\nconst featuredCityNodes = cityNodes.filter((area) => area.featured);\n\nconst stats: [string, string][] = [\n  [\"500+\", \"registered places\"],\n  [\"12,000+\", \"appointments booked\"],\n  [\"4.8 / 5\", \"customer rating\"],\n  [\"0%\", \"commission — always\"],\n];\n\nconst neighborhoods = [\n  { name: \"Bole\", count: 84, trend: true },\n  { name: \"Piassa\", count: 62 },\n  { name: \"Kazanchis\", count: 47 },\n  { name: \"Saris\", count: 39 },\n  { name: \"Megenagna\", count: 55 },\n  { name: \"4 Kilo\", count: 33 },\n  { name: \"Old Airport\", count: 41 },\n  { name: \"CMC\", count: 28 },\n  { name: \"Gerji\", count: 24 },\n  { name: \"Lebu\", count: 19 },\n];\n\nconst testimonials = [\n  {\n    quote: \"Booking has become effortless. My clients can even make appointments while I sleep.\",\n    name: \"Lucy Tesfaye\",\n    role: \"Lucy Beauty Lounge · Bole\",\n    initial: \"LT\",\n  },\n  {\n    quote: \"The phone calls that used to interrupt my day are gone. Now my attention stays with my clients.\",\n    name: \"Dawit Alemu\",\n    role: \"Addis Barber Club · Piassa\",\n    initial: \"DA\",\n  },\n  {\n    quote: \"It does not just support the Ethiopian calendar. The whole experience feels made for us.\",\n    name: \"Selam Dejene\",\n    role: \"Efoyta Spa · 22 Mazoria\",\n    initial: \"SD\",\n  },\n  {\n    quote: \"The reminders have transformed attendance. Missed appointments are down dramatically.\",\n    name: \"Kiros Gebre\",\n    role: \"Kings Barber · CMC\",\n    initial: \"KG\",\n  },\n];\n\nconst faqs = [\n  {\n    q: \"Do I need a long contract?\",\n    a: \"No. There is no long-term contract, and you can stop at any time without an additional cancellation charge.\",\n  },\n  {\n    q: \"What does Business Starter + Website include?\",\n    a: \"Online booking, customer records, automatic reminders, reports and a modern website created for your business.\",\n  },\n  {\n    q: \"How much commission do you charge?\",\n    a: \"Zero commission. Every birr from your bookings stays yours; Aspio charges only the monthly subscription.\",\n  },\n  {\n    q: \"Can my clients book in Amharic?\",\n    a: \"Yes. The complete booking experience works in Amharic and English, and each client can choose the language they prefer.\",\n  },\n  {\n    q: \"Do you provide training?\",\n    a: \"Yes. We provide an onboarding visit and a two-hour training session for your team.\",\n  },\n];\n\nfunction ethNum(n: number) {\n  return String(n);\n}\n\nexport default function EthiopiaEnglishHome() {\n  const [step, setStep] = useState(0);\n  const [month, setMonth] = useState(10);\n  const [selectedDay, setSelectedDay] = useState(15);\n  const [selectedSlot, setSelectedSlot] = useState(2);\n  const [activeTestimonial, setActiveTestimonial] = useState(0);\n  const [openFaq, setOpenFaq] = useState(0);\n  const [activeCityNode, setActiveCityNode] = useState(0);\n  const [heroService, setHeroService] = useState(0);\n  const [heroDay, setHeroDay] = useState(1);\n  const [heroTime, setHeroTime] = useState(2);\n\n  const daysInMonth = month === 12 ? 6 : 30;\n  const todayDay = 15;\n  const busyDays = useMemo(() => new Set([3, 7, 11, 18, 22, 27]), []);\n  const availableCount = useMemo(() => timeSlots.length - (selectedDay % 3), [selectedDay]);\n  const locatorPlaces = useMemo(() => getAreaSalons(addisAreas[activeCityNode], \"en\"), [activeCityNode]);\n\n  useEffect(() => {\n    const els = Array.from(document.querySelectorAll<HTMLElement>(\"[data-am-reveal]\"));\n    const io = new IntersectionObserver((entries) => {\n      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add(\"is-in\"); });\n    }, { threshold: 0.14 });\n    els.forEach((el) => io.observe(el));\n\n    const onScroll = () => {\n      const y = window.scrollY;\n      document.documentElement.style.setProperty(\"--am-scroll\", String(Math.min(y / 700, 1)));\n      document.documentElement.style.setProperty(\"--am-scroll-y\", String(y));\n    };\n    onScroll();\n    window.addEventListener(\"scroll\", onScroll, { passive: true });\n    return () => { io.disconnect(); window.removeEventListener(\"scroll\", onScroll); };\n  }, []);\n\n  useEffect(() => {\n    const t = window.setInterval(() => setActiveTestimonial((i) => (i + 1) % testimonials.length), 5500);\n    return () => window.clearInterval(t);\n  }, []);\n\n  return (\n    <>\n      <svg className=\"am-svg-defs\" width=\"0\" height=\"0\" aria-hidden=\"true\">\n        <defs>\n          <pattern id=\"am-habesha\" x=\"0\" y=\"0\" width=\"60\" height=\"60\" patternUnits=\"userSpaceOnUse\">\n            <path d=\"M30 6 L34 26 L54 30 L34 34 L30 54 L26 34 L6 30 L26 26 Z\" fill=\"none\" stroke=\"rgba(121,0,232,.18)\" strokeWidth=\"1\" />\n            <circle cx=\"30\" cy=\"30\" r=\"2\" fill=\"rgba(121,0,232,.35)\" />\n          </pattern>\n        </defs>\n      </svg>\n\n      <section className=\"am-hero\" data-am-reveal>\n        <div className=\"am-hero-fidel\" aria-hidden=\"true\">A S P I O</div>\n        <div className=\"am-hero-pattern\" aria-hidden=\"true\">\n          <svg width=\"100%\" height=\"100%\"><rect width=\"100%\" height=\"100%\" fill=\"url(#am-habesha)\" /></svg>\n        </div>\n        <div className=\"am-hero-copy\">\n          <p className=\"am-eyebrow\"><span />BOOKING, WEBSITE AND GROWTH — FOR YOUR BUSINESS</p>\n          <h1>\n            <span>A full calendar.</span>\n            <strong>A calmer salon.</strong>\n          </h1>\n          <p className=\"am-intro\">\n            Aspio Business Starter connects appointments, customers and your business website in one effortless workflow made for Ethiopia.\n          </p>\n\n          <div className=\"am-offer\">\n            <div><span>BUSINESS STARTER + WEBSITE</span><b>Essential business tools + a modern website</b></div>\n            <div className=\"am-price\">\n              <strong>5,000</strong>\n              <span><b>birr</b>/ month*</span>\n            </div>\n            <small>Online booking, customer records and your business website are included.</small>\n          </div>\n\n          <div className=\"am-hero-actions\">\n            <Link className=\"am-btn am-btn-primary\" href=\"/ethiopia/en/register\">Book a free demo<span aria-hidden=\"true\">↗</span></Link>\n            <Link className=\"am-btn am-btn-text\" href=\"/ethiopia/en/discover\"><i aria-hidden=\"true\">▶</i>Explore places</Link>\n          </div>\n        </div>\n\n        <div className=\"am-stage\">\n          <div className=\"am-stage-orbit\" aria-hidden=\"true\"><i /><i /><i /></div>\n          <div className=\"am-device\">\n            <div className=\"am-laptop\">\n              <div className=\"am-laptop-camera\" aria-hidden=\"true\"><i /></div>\n              <div className=\"am-browser\">\n                <span><i /><i /><i /></span>\n                <b><i /> book.aspio.et/lucy</b>\n                <em><i />online</em>\n              </div>\n              <div className=\"am-booking\">\n                <aside className=\"am-app-rail\" aria-label=\"Booking navigation\">\n                  <div>A</div>\n                  <button type=\"button\" className=\"active\" aria-label=\"Book\">⌁</button>\n                  <button type=\"button\" aria-label=\"Calendar\">▦</button>\n                  <button type=\"button\" aria-label=\"Profile\">◉</button>\n                  <span>AM</span>\n                </aside>\n\n                <main className=\"am-booking-main\">\n                  <header>\n                    <div className=\"am-salon-avatar\">L</div>\n                    <div><b>Lucy Beauty Lounge</b><small>Bole · Addis Ababa</small></div>\n                    <button type=\"button\" aria-label=\"More options\">••</button>\n                  </header>\n\n                  <nav className=\"am-flow-tabs\" aria-label=\"Booking steps\">\n                    {[\"Service\", \"Date\", \"Time\", \"Confirm\"].map((label, i) => (\n                      <button key={label} type=\"button\" className={`${i === step ? \"active\" : \"\"} ${i < step ? \"done\" : \"\"}`} onClick={() => { if (i <= step) setStep(i); }}>\n                        <i>{i < step ? \"✓\" : `0${i + 1}`}</i><span>{label}</span>\n                      </button>\n                    ))}\n                  </nav>\n\n                  <section className=\"am-step-panel\" key={step}>\n                    {step === 0 && <>\n                      <div className=\"am-step-heading\"><span>01 / 04</span><h2>What do you need?</h2><small>Choose one service</small></div>\n                      <div className=\"am-services\">\n                        {services.map((service, i) => (\n                          <button key={service.name} type=\"button\" className={heroService === i ? \"selected\" : \"\"} onClick={() => { setHeroService(i); setStep(1); }}>\n                            <span>{service.icon}</span><div><b>{service.name}</b><small>{service.meta}</small></div><i aria-hidden=\"true\">→</i>\n                          </button>\n                        ))}\n                      </div>\n                    </>}\n\n                    {step === 1 && <>\n                      <div className=\"am-step-heading\"><span>02 / 04</span><h2>Choose a date</h2><small>{services[heroService].name} · {services[heroService].meta}</small></div>\n                      <div className=\"am-quick-days\">\n                        {heroDays.map((item, i) => <button key={item.date} type=\"button\" className={heroDay === i ? \"selected\" : \"\"} onClick={() => { setHeroDay(i); setStep(2); }}><small>{item.day}</small><b>{item.date}</b><span>{item.month}</span></button>)}\n                      </div>\n                      <button className=\"am-flow-back\" type=\"button\" onClick={() => setStep(0)}>← Change service</button>\n                    </>}\n\n                    {step === 2 && <>\n                      <div className=\"am-step-heading\"><span>03 / 04</span><h2>Choose your time</h2><small>{heroDays[heroDay].day} · {heroDays[heroDay].month} {heroDays[heroDay].date}</small></div>\n                      <div className=\"am-quick-times\">\n                        {heroTimes.map((time, i) => <button key={time} type=\"button\" className={heroTime === i ? \"selected\" : \"\"} onClick={() => { setHeroTime(i); setStep(3); }}><span>{time}</span><small>{i === 2 ? \"Most popular\" : \"Available\"}</small></button>)}\n                      </div>\n                      <button className=\"am-flow-back\" type=\"button\" onClick={() => setStep(1)}>← Change date</button>\n                    </>}\n\n                    {step === 3 && <div className=\"am-confirmation\">\n                      <div className=\"am-confirm-mark\"><i>✓</i><span /><span /></div>\n                      <div><small>Your appointment is confirmed</small><h2>{heroDays[heroDay].day} · {heroTimes[heroTime]}</h2><p>{services[heroService].name} — Lucy Beauty Lounge</p></div>\n                      <footer><span><small>Booking reference</small><b>AS-2406</b></span><button type=\"button\" onClick={() => setStep(0)}>Book another ↻</button></footer>\n                    </div>}\n                  </section>\n                </main>\n              </div>\n            </div>\n            <div className=\"am-laptop-deck\" aria-hidden=\"true\">\n              <div className=\"am-keyboard\">{Array.from({ length: 36 }).map((_, i) => <i key={i} />)}</div>\n              <span />\n            </div>\n          </div>\n          <div className=\"am-float am-float-top\">\n            <span aria-hidden=\"true\">✓</span>\n            <div><b>Booking confirmed</b><small>Mimi · now</small></div>\n          </div>\n          <div className=\"am-float am-float-bottom\">\n            <b>82%</b>\n            <div><span aria-hidden=\"true\"><i /></span><small>of today is booked</small></div>\n          </div>\n        </div>\n      </section>\n\n      <div className=\"am-marquee\" aria-hidden=\"true\">\n        <div className=\"am-marquee-track\">\n          {[...marqueeWords, ...marqueeWords, ...marqueeWords].map((word, i) => (\n            <span key={i}>\n              {word}\n              <em />\n            </span>\n          ))}\n        </div>\n      </div>\n\n      <section className=\"am-locator\" data-am-reveal>\n        <header className=\"am-locator-head\">\n          <div>\n            <p><span>ADDIS ABABA</span> · NEAR YOU</p>\n            <h2>Find the best place<br />in your city.</h2>\n          </div>\n          <Link href=\"/ethiopia/en/discover\">Explore the marketplace <span>↗</span></Link>\n        </header>\n\n        <div className=\"am-locator-scroll-scene\">\n          <div className=\"am-locator-shell am-locator-sticky\">\n          <aside className=\"am-locator-panel\">\n            <div className=\"am-locator-search\"><span aria-hidden=\"true\">⌕</span><b>Search an area or service</b><kbd>↵</kbd></div>\n            <div className=\"am-locator-result-head\">\n              <div><small>SELECTED AREA</small><h3>{cityNodes[activeCityNode].name}</h3></div>\n              <span><b>{cityNodes[activeCityNode].count}</b> places</span>\n            </div>\n\n            <div className=\"am-locator-list\">\n              {locatorPlaces.map((place, index) => (\n                <button key={place.id} type=\"button\" className={index === 0 ? \"active\" : \"\"}>\n                  <img src={place.image} alt=\"\" />\n                  <span>\n                    <small>{place.type}</small>\n                    <strong>{place.name}</strong>\n                    <em>{place.rating} / 5 · {place.price}</em>\n                  </span>\n                  <i>{index === 0 ? `Today ${place.time}` : \"→\"}</i>\n                </button>\n              ))}\n            </div>\n\n            <Link className=\"am-locator-more\" href=\"/ethiopia/en/discover\">See every place in {cityNodes[activeCityNode].name} <span>→</span></Link>\n          </aside>\n\n            <AddisMap locations={cityNodes} activeIndex={activeCityNode} onSelect={setActiveCityNode} language=\"en\" />\n          </div>\n        </div>\n\n        <nav className=\"am-locator-areas\" aria-label=\"Addis Ababa neighbourhoods\">\n          {featuredCityNodes.map((node, i) => <button key={node.id} type=\"button\" className={activeCityNode === i ? \"active\" : \"\"} onClick={() => setActiveCityNode(i)}><span>0{i + 1}</span>{node.name}<small>{node.count}</small></button>)}\n        </nav>\n      </section>\n\n      <section className=\"am-stats\" data-am-reveal>\n        <div className=\"am-stats-intro\"><span>ASPIO / IN NUMBERS</span><p>The city’s beauty businesses,<br />connected in one place.</p></div>\n        {stats.map(([value, label], i) => (\n          <div key={label} className=\"am-stat\" style={{ [\"--i\" as string]: i } as React.CSSProperties}>\n            <small>0{i + 1}</small>\n            <strong>{value}</strong>\n            <span>{label}</span>\n          </div>\n        ))}\n      </section>\n\n      <section className=\"am-calendar-section\" data-am-reveal>\n        <div className=\"am-calendar-copy\">\n          <p className=\"am-eyebrow\"><span />THE ETHIOPIAN CALENDAR</p>\n          <h2>Book naturally with the<br /><em>Ethiopian calendar.</em></h2>\n          <p className=\"am-intro\">\n            Thirteen months, familiar local dates and availability you can see immediately—rooted in Addis, built to a global standard.\n          </p>\n          <div className=\"am-calendar-legend\">\n            <span><i className=\"dot dot-purple\" />Selected</span>\n            <span><i className=\"dot dot-today\" />Today</span>\n            <span><i className=\"dot dot-busy\" />Booked</span>\n            <span><i className=\"dot dot-free\" />Available</span>\n          </div>\n          <div className=\"am-calendar-summary\">\n            <div>\n              <small>SELECTED DATE</small>\n              <b>{ethMonths[month]} {selectedDay}, 2018</b>\n            </div>\n            <div>\n              <small>AVAILABLE TIMES</small>\n              <b>{availableCount} / {timeSlots.length}</b>\n            </div>\n          </div>\n        </div>\n\n        <div className=\"am-calendar\">\n          <div className=\"am-calendar-toolbar\">\n            <button\n              type=\"button\"\n              className=\"am-cal-nav\"\n              onClick={() => setMonth((m) => (m + 12) % 13)}\n              aria-label=\"Previous month\"\n            >‹</button>\n            <div className=\"am-cal-title\">\n              <strong>{ethMonths[month]}</strong>\n              <span>2018 E.C. · Ethiopian Calendar</span>\n            </div>\n            <button\n              type=\"button\"\n              className=\"am-cal-nav\"\n              onClick={() => setMonth((m) => (m + 1) % 13)}\n              aria-label=\"Next month\"\n            >›</button>\n          </div>\n\n          <div className=\"am-cal-months\">\n            {ethMonths.map((m, i) => (\n              <button\n                key={m}\n                type=\"button\"\n                className={i === month ? \"on\" : \"\"}\n                onClick={() => setMonth(i)}\n              >\n                {m}\n              </button>\n            ))}\n          </div>\n\n          <div className=\"am-cal-weekdays\">\n            {ethWeekdays.map((d) => <span key={d}>{d}</span>)}\n          </div>\n\n          <div className=\"am-cal-grid\" style={{ [\"--offset\" as string]: month * 2 % 7 } as React.CSSProperties}>\n            {Array.from({ length: daysInMonth }).map((_, i) => {\n              const day = i + 1;\n              const isToday = month === 10 && day === todayDay;\n              const isSelected = day === selectedDay;\n              const isBusy = busyDays.has(day);\n              return (\n                <button\n                  key={day}\n                  type=\"button\"\n                  onClick={() => { setSelectedDay(day); setSelectedSlot(-1); }}\n                  className={`am-cal-day${isSelected ? \" selected\" : \"\"}${isToday ? \" today\" : \"\"}${isBusy ? \" busy\" : \"\"}`}\n                  style={i === 0 ? { gridColumnStart: (month * 2 % 7) + 1 } : undefined}\n                >\n                  <b>{day}</b>\n                  <em>{ethNum(day)}</em>\n                  {isToday && <i className=\"am-cal-today-dot\" aria-hidden=\"true\" />}\n                  {isBusy && !isSelected && <i className=\"am-cal-busy-dot\" aria-hidden=\"true\" />}\n                </button>\n              );\n            })}\n          </div>\n\n          <div className=\"am-cal-slots\">\n            {timeSlots.map((slot, i) => {\n              const isBooked = i >= availableCount;\n              return (\n                <button\n                  key={slot}\n                  type=\"button\"\n                  disabled={isBooked}\n                  onClick={() => setSelectedSlot(i)}\n                  className={`am-cal-slot${selectedSlot === i ? \" on\" : \"\"}${isBooked ? \" booked\" : \"\"}`}\n                >\n                  {slot}\n                </button>\n              );\n            })}\n          </div>\n\n          <div className=\"am-cal-cta\">\n            <div>\n              <small>SUMMARY</small>\n              <b>\n                {ethMonths[month]} {selectedDay}, 2018\n                {selectedSlot >= 0 && !(selectedSlot >= availableCount) ? ` · ${timeSlots[selectedSlot]}` : \"\"}\n              </b>\n            </div>\n            <button type=\"button\" className=\"am-btn am-btn-primary\" disabled={selectedSlot < 0 || selectedSlot >= availableCount}>\n              Confirm appointment<span aria-hidden=\"true\">↗</span>\n            </button>\n          </div>\n        </div>\n      </section>\n\n      <section className=\"am-hoods\" data-am-reveal>\n        <div className=\"am-section-head am-hoods-head\">\n          <div>\n            <p>AROUND THE CITY</p>\n            <h2>Your next Addis Ababa appointment<br />is closer than you think.</h2>\n          </div>\n          <p className=\"am-hoods-lead\">10 neighbourhoods. 400+ places. One short journey.</p>\n        </div>\n        <div className=\"am-hood-grid\">\n          {neighborhoods.map((h, i) => (\n            <button\n              key={h.name}\n              type=\"button\"\n              className={`am-hood${h.trend ? \" trend\" : \"\"}`}\n              style={{ [\"--i\" as string]: i } as React.CSSProperties}\n            >\n              {h.trend && <span className=\"am-hood-pulse\" aria-hidden=\"true\" />}\n              <div className=\"am-hood-body\">\n                <b>{h.name}</b>\n                <small>{h.count} places</small>\n              </div>\n              {h.trend && <em>Popular</em>}\n              <i aria-hidden=\"true\">→</i>\n            </button>\n          ))}\n        </div>\n      </section>\n\n      <section className=\"am-market-preview\" id=\"market\" data-am-reveal>\n        <div className=\"am-section-head am-market-head\">\n          <div>\n            <p>FEATURED PLACES</p>\n            <h2>The city’s favourites.</h2>\n          </div>\n          <Link className=\"am-see-all\" href=\"/ethiopia/en/discover\">See all places<span aria-hidden=\"true\">→</span></Link>\n        </div>\n        <div className=\"am-market-grid\">\n          {featured.map((place, i) => (\n            <article\n              className=\"am-card am-card-featured\"\n              key={place.name}\n              style={{ [\"--i\" as string]: i } as React.CSSProperties}\n            >\n              <div className=\"am-card-image\">\n                <img src={place.image} alt=\"\" />\n                <span className=\"am-card-tag\">{place.tag}</span>\n              </div>\n              <div className=\"am-card-body\">\n                <div className=\"am-card-rating\">{place.rating} / 5</div>\n                <p>{place.type}</p>\n                <h3>{place.name}</h3>\n                <small>⌖ {place.area}</small>\n                <footer>\n                  <b>{place.price}</b>\n                  <button type=\"button\">Book a time<span aria-hidden=\"true\">→</span></button>\n                </footer>\n              </div>\n            </article>\n          ))}\n        </div>\n      </section>\n\n      <section className=\"am-testimonials\" data-am-reveal>\n        <div className=\"am-testimonial-stage\">\n          <span className=\"am-quote-mark\" aria-hidden=\"true\">“</span>\n          <div className=\"am-testimonial-track\">\n            {testimonials.map((t, i) => (\n              <blockquote\n                key={t.name}\n                className={`am-testimonial${i === activeTestimonial ? \" on\" : \"\"}`}\n                aria-hidden={i !== activeTestimonial}\n              >\n                <p>{t.quote}</p>\n                <footer>\n                  <div className=\"am-testimonial-avatar\" aria-hidden=\"true\">{t.initial}</div>\n                  <div>\n                    <b>{t.name}</b>\n                    <small>{t.role}</small>\n                  </div>\n                </footer>\n              </blockquote>\n            ))}\n          </div>\n          <div className=\"am-testimonial-dots\" role=\"tablist\">\n            {testimonials.map((t, i) => (\n              <button\n                key={t.name}\n                type=\"button\"\n                role=\"tab\"\n                aria-selected={i === activeTestimonial}\n                onClick={() => setActiveTestimonial(i)}\n                aria-label={`Testimonial ${i + 1}`}\n              />\n            ))}\n          </div>\n        </div>\n      </section>\n\n      <section className=\"am-highlights\" data-am-reveal>\n        <div className=\"am-section-head\" style={{ margin: \"0 auto 44px\", textAlign: \"center\" }}>\n          <p>THE NEXT STEP</p>\n          <h2>A complete experience, connected in one place.</h2>\n        </div>\n        <div className=\"am-highlight-grid\">\n          {highlights.map((h, i) => (\n            <Link\n              key={h.href}\n              className=\"am-highlight\"\n              href={h.href}\n              style={{ [\"--i\" as string]: i } as React.CSSProperties}\n            >\n              <span className=\"am-highlight-tag\">{h.tag}</span>\n              <h3>{h.title}</h3>\n              <p>{h.body}</p>\n              <em>Explore more<i aria-hidden=\"true\">→</i></em>\n            </Link>\n          ))}\n        </div>\n      </section>\n\n      <section className=\"am-faq\" data-am-reveal>\n        <div className=\"am-section-head am-faq-head\">\n          <p>FREQUENTLY ASKED</p>\n          <h2>Your question may already be answered.</h2>\n        </div>\n        <ul className=\"am-faq-list\">\n          {faqs.map((f, i) => {\n            const open = i === openFaq;\n            return (\n              <li key={f.q} className={`am-faq-item${open ? \" open\" : \"\"}`}>\n                <button\n                  type=\"button\"\n                  aria-expanded={open}\n                  onClick={() => setOpenFaq(open ? -1 : i)}\n                >\n                  <span>{f.q}</span>\n                  <i aria-hidden=\"true\">+</i>\n                </button>\n                <div className=\"am-faq-body\"><p>{f.a}</p></div>\n              </li>\n            );\n          })}\n        </ul>\n      </section>\n\n      <section className=\"am-culture\" data-am-reveal>\n        <div className=\"am-culture-pattern\" aria-hidden=\"true\">\n          <svg width=\"100%\" height=\"100%\"><rect width=\"100%\" height=\"100%\" fill=\"url(#am-habesha)\" /></svg>\n        </div>\n        <p className=\"am-eyebrow\"><span />BEAUTY, TIME AND PEACE OF MIND</p>\n        <blockquote className=\"am-culture-quote\">\n          <p>\n            <em>“</em>\n            As considered as a coffee ceremony,<br />\n            as effortless as the morning air.\n            <em>”</em>\n          </p>\n          <footer>— THE ASPIO PHILOSOPHY</footer>\n        </blockquote>\n        <div className=\"am-culture-cta\">\n          <Link className=\"am-btn am-btn-primary\" href=\"/ethiopia/en/register\">Start your journey<span aria-hidden=\"true\">↗</span></Link>\n          <Link className=\"am-btn am-btn-text\" href=\"/ethiopia/en/discover\"><i aria-hidden=\"true\">▶</i>Explore places</Link>\n        </div>\n      </section>\n    </>\n  );\n}\n"
+  },
+  "bilingual_reference_sources": {}
+}

@@ -1,0 +1,492 @@
+{
+  "document_purpose": "Amharic UX copy review for the Aspio Ethiopia website",
+  "project": "Aspio Ethiopia",
+  "section": "Part 4: contact, registration, forms, and map interface",
+  "instructions_for_gemini": [
+    "Act as a senior Ethiopian Amharic UX writer and localization editor based in Addis Ababa.",
+    "Rewrite every current_amharic value into natural, contemporary, polished Amharic suitable for an Ethiopian technology and beauty marketplace.",
+    "Use the matching English reference source to recover the intended meaning. Do not translate literally when a natural Ethiopian expression is clearer.",
+    "Keep the language concise enough to fit buttons, cards, navigation, forms, calendars, and mobile screens.",
+    "Preserve Aspio, Business Starter, Website, CRM, API, URLs, email addresses, prices, numbers, dates, and time values exactly unless the existing Amharic numeral itself is intentional.",
+    "Keep accepted Addis Ababa neighborhood names and Ethiopian personal names correctly spelled.",
+    "Never introduce a star character or a star-rating symbol.",
+    "Do not edit id, source_file, source_line, source_kind, current_amharic, nearby_context, English reference sources, or the JSON structure.",
+    "Fill revised_amharic for every item. Do not leave any item blank, omit IDs, merge items, add commentary, or place markup/code in a translation.",
+    "Return the completed JSON as a downloadable file named amharic-copy-reviewed.json. Do not paste a shortened or partial result into chat."
+  ],
+  "continuation_note": "Part 1 has already been applied. Complete every item in this smaller continuation file and preserve every ID.",
+  "product_context": {
+    "brand": "Aspio",
+    "market": "Ethiopia",
+    "audience": "Salon, barbershop, nail studio, spa owners and their customers in Addis Ababa",
+    "offer": "Business Starter + Website: online booking, customer records, reminders, reports, and a business website",
+    "tone": "Clear, warm, trustworthy, modern, locally natural, and professional"
+  },
+  "item_count": 51,
+  "translation_items": [
+    {
+      "id": "app/ethiopia/contact/page.tsx#1",
+      "source_file": "app/ethiopia/contact/page.tsx",
+      "source_line": 5,
+      "source_kind": "code string",
+      "current_amharic": "ያግኙን | Aspio Ethiopia",
+      "nearby_context": "import LeadForm from \"../components/LeadForm\"; export const metadata: Metadata = { title: \"ያግኙን | Aspio Ethiopia\", description: \"የAspio Ethiopia ቡድንን ያግኙ።\", }; export default function EthiopiaContactPage(",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/contact/page.tsx#2",
+      "source_file": "app/ethiopia/contact/page.tsx",
+      "source_line": 6,
+      "source_kind": "code string",
+      "current_amharic": "የAspio Ethiopia ቡድንን ያግኙ።",
+      "nearby_context": "dForm\"; export const metadata: Metadata = { title: \"ያግኙን | Aspio Ethiopia\", description: \"የAspio Ethiopia ቡድንን ያግኙ።\", }; export default function EthiopiaContactPage() { return ( <main className=\"am-conta",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/contact/page.tsx#3",
+      "source_file": "app/ethiopia/contact/page.tsx",
+      "source_line": 13,
+      "source_kind": "visible page text",
+      "current_amharic": "CONTACT / ያግኙን",
+      "nearby_context": "ge\"> <section className=\"am-contact-copy\"> <p className=\"am-lead-kicker\"><span />CONTACT / ያግኙን</p> <h1>ጥያቄ አለዎት?<br /><em>እንነጋገር።</em></h1> <p>ስለ Business Starter፣ ድረ-ገጽዎ ወይ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/contact/page.tsx#4",
+      "source_file": "app/ethiopia/contact/page.tsx",
+      "source_line": 14,
+      "source_kind": "visible page text",
+      "current_amharic": "ጥያቄ አለዎት?",
+      "nearby_context": "am-contact-copy\"> <p className=\"am-lead-kicker\"><span />CONTACT / ያግኙን</p> <h1>ጥያቄ አለዎት?<br /><em>እንነጋገር።</em></h1> <p>ስለ Business Starter፣ ድረ-ገጽዎ ወይም የአስፒዮ አገልግሎት ይጠይቁን። ቡድናች",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/contact/page.tsx#5",
+      "source_file": "app/ethiopia/contact/page.tsx",
+      "source_line": 14,
+      "source_kind": "visible page text",
+      "current_amharic": "እንነጋገር።",
+      "nearby_context": "<p className=\"am-lead-kicker\"><span />CONTACT / ያግኙን</p> <h1>ጥያቄ አለዎት?<br /><em>እንነጋገር።</em></h1> <p>ስለ Business Starter፣ ድረ-ገጽዎ ወይም የአስፒዮ አገልግሎት ይጠይቁን። ቡድናችን በቅርቡ መልስ ይሰጥዎታል",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/contact/page.tsx#6",
+      "source_file": "app/ethiopia/contact/page.tsx",
+      "source_line": 15,
+      "source_kind": "visible page text",
+      "current_amharic": "ስለ Business Starter፣ ድረ-ገጽዎ ወይም የአስፒዮ አገልግሎት ይጠይቁን። ቡድናችን በቅርቡ መልስ ይሰጥዎታል።",
+      "nearby_context": "kicker\"><span />CONTACT / ያግኙን</p> <h1>ጥያቄ አለዎት?<br /><em>እንነጋገር።</em></h1> <p>ስለ Business Starter፣ ድረ-ገጽዎ ወይም የአስፒዮ አገልግሎት ይጠይቁን። ቡድናችን በቅርቡ መልስ ይሰጥዎታል።</p> <div className=\"am-contact-details\"> <div><span>RESPONSE</span><b>በ1 የስራ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/contact/page.tsx#7",
+      "source_file": "app/ethiopia/contact/page.tsx",
+      "source_line": 17,
+      "source_kind": "visible page text",
+      "current_amharic": "በ1 የስራ ቀን ውስጥ",
+      "nearby_context": "ሰጥዎታል።</p> <div className=\"am-contact-details\"> <div><span>RESPONSE</span><b>በ1 የስራ ቀን ውስጥ</b></div> <div><span>LANGUAGE</span><b>አማርኛ · English</b></div> <div><span",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/contact/page.tsx#8",
+      "source_file": "app/ethiopia/contact/page.tsx",
+      "source_line": 18,
+      "source_kind": "visible page text",
+      "current_amharic": "አማርኛ · English",
+      "nearby_context": "<div><span>RESPONSE</span><b>በ1 የስራ ቀን ውስጥ</b></div> <div><span>LANGUAGE</span><b>አማርኛ · English</b></div> <div><span>EMAIL</span><b>amanuel.t@aspio.se</b></div> </div>",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#1",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 6,
+      "source_kind": "code string",
+      "current_amharic": "ነፃ ማሳያ | Aspio Ethiopia",
+      "nearby_context": "import LeadForm from \"../components/LeadForm\"; export const metadata: Metadata = { title: \"ነፃ ማሳያ | Aspio Ethiopia\", description: \"ለAspio Business Starter + Website የግል ማሳያ ይመዝገቡ።\", }; export default functi",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#2",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 7,
+      "source_kind": "code string",
+      "current_amharic": "ለAspio Business Starter + Website የግል ማሳያ ይመዝገቡ።",
+      "nearby_context": "orm\"; export const metadata: Metadata = { title: \"ነፃ ማሳያ | Aspio Ethiopia\", description: \"ለAspio Business Starter + Website የግል ማሳያ ይመዝገቡ።\", }; export default function EthiopiaRegistrationPage() { return ( <main className=\"am-",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#3",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 15,
+      "source_kind": "visible page text",
+      "current_amharic": "የንግድዎ",
+      "nearby_context": "ory\"> <p className=\"am-lead-kicker\"><span />BUSINESS STARTER + WEBSITE</p> <h1>የንግድዎ<br />ቀጣይ ምዕራፍ<br /><em>እዚህ ይጀምራል።</em></h1> <p>ስምዎን፣ ኢሜይልዎን እና ስልክዎን ያስገቡ። ቡድናችን አስፒዮ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#4",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 15,
+      "source_kind": "visible page text",
+      "current_amharic": "ቀጣይ ምዕራፍ",
+      "nearby_context": "<p className=\"am-lead-kicker\"><span />BUSINESS STARTER + WEBSITE</p> <h1>የንግድዎ<br />ቀጣይ ምዕራፍ<br /><em>እዚህ ይጀምራል።</em></h1> <p>ስምዎን፣ ኢሜይልዎን እና ስልክዎን ያስገቡ። ቡድናችን አስፒዮ ለንግድዎ እንዴት እንደ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#5",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 15,
+      "source_kind": "visible page text",
+      "current_amharic": "እዚህ ይጀምራል።",
+      "nearby_context": "m-lead-kicker\"><span />BUSINESS STARTER + WEBSITE</p> <h1>የንግድዎ<br />ቀጣይ ምዕራፍ<br /><em>እዚህ ይጀምራል።</em></h1> <p>ስምዎን፣ ኢሜይልዎን እና ስልክዎን ያስገቡ። ቡድናችን አስፒዮ ለንግድዎ እንዴት እንደሚሰራ ለማሳየት ያገኝዎታል።</p",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#6",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 16,
+      "source_kind": "visible page text",
+      "current_amharic": "ስምዎን፣ ኢሜይልዎን እና ስልክዎን ያስገቡ። ቡድናችን አስፒዮ ለንግድዎ እንዴት እንደሚሰራ ለማሳየት ያገኝዎታል።",
+      "nearby_context": "STARTER + WEBSITE</p> <h1>የንግድዎ<br />ቀጣይ ምዕራፍ<br /><em>እዚህ ይጀምራል።</em></h1> <p>ስምዎን፣ ኢሜይልዎን እና ስልክዎን ያስገቡ። ቡድናችን አስፒዮ ለንግድዎ እንዴት እንደሚሰራ ለማሳየት ያገኝዎታል።</p> <ol className=\"am-lead-steps\"> <li><span>01</span><div><b>መረጃዎን ይላኩ</b>",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#7",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 19,
+      "source_kind": "visible page text",
+      "current_amharic": "መረጃዎን ይላኩ",
+      "nearby_context": "ለማሳየት ያገኝዎታል።</p> <ol className=\"am-lead-steps\"> <li><span>01</span><div><b>መረጃዎን ይላኩ</b><small>ከአንድ ደቂቃ በታች</small></div></li> <li><span>02</span><div><b>ጊዜ እናስማማለን</b><",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#8",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 19,
+      "source_kind": "visible page text",
+      "current_amharic": "ከአንድ ደቂቃ በታች",
+      "nearby_context": "<ol className=\"am-lead-steps\"> <li><span>01</span><div><b>መረጃዎን ይላኩ</b><small>ከአንድ ደቂቃ በታች</small></div></li> <li><span>02</span><div><b>ጊዜ እናስማማለን</b><small>በስልክ ወይም በኢሜይል</s",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#9",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 20,
+      "source_kind": "visible page text",
+      "current_amharic": "ጊዜ እናስማማለን",
+      "nearby_context": "iv><b>መረጃዎን ይላኩ</b><small>ከአንድ ደቂቃ በታች</small></div></li> <li><span>02</span><div><b>ጊዜ እናስማማለን</b><small>በስልክ ወይም በኢሜይል</small></div></li> <li><span>03</span><div><b>በቀጥታ ይመልከቱ</b",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#10",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 20,
+      "source_kind": "visible page text",
+      "current_amharic": "በስልክ ወይም በኢሜይል",
+      "nearby_context": "mall>ከአንድ ደቂቃ በታች</small></div></li> <li><span>02</span><div><b>ጊዜ እናስማማለን</b><small>በስልክ ወይም በኢሜይል</small></div></li> <li><span>03</span><div><b>በቀጥታ ይመልከቱ</b><small>የ30 ደቂቃ የግል ማሳያ</",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#11",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 21,
+      "source_kind": "visible page text",
+      "current_amharic": "በቀጥታ ይመልከቱ",
+      "nearby_context": "<b>ጊዜ እናስማማለን</b><small>በስልክ ወይም በኢሜይል</small></div></li> <li><span>03</span><div><b>በቀጥታ ይመልከቱ</b><small>የ30 ደቂቃ የግል ማሳያ</small></div></li> </ol> <Link href=\"/ethiopia/busi",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#12",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 21,
+      "source_kind": "visible page text",
+      "current_amharic": "የ30 ደቂቃ የግል ማሳያ",
+      "nearby_context": "ll>በስልክ ወይም በኢሜይል</small></div></li> <li><span>03</span><div><b>በቀጥታ ይመልከቱ</b><small>የ30 ደቂቃ የግል ማሳያ</small></div></li> </ol> <Link href=\"/ethiopia/business\">Business Starter + W",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#13",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 24,
+      "source_kind": "visible page text",
+      "current_amharic": "Business Starter + Website ምን ያካትታል?",
+      "nearby_context": "mall>የ30 ደቂቃ የግል ማሳያ</small></div></li> </ol> <Link href=\"/ethiopia/business\">Business Starter + Website ምን ያካትታል? <span>→</span></Link> </section> <section className=\"am-lead-card\"> <head",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#14",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 29,
+      "source_kind": "visible page text",
+      "current_amharic": "ነፃ ማሳያ",
+      "nearby_context": "SPIO / REGISTER</span><b>01—03</b></header> <div className=\"am-lead-card-title\"><small>ነፃ ማሳያ</small><h2>ለመጀመር ዝግጁ ነዎት?</h2></div> <LeadForm kind=\"demo\" source=\"ethiopia-registrati",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#15",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 29,
+      "source_kind": "visible page text",
+      "current_amharic": "ለመጀመር ዝግጁ ነዎት?",
+      "nearby_context": "pan><b>01—03</b></header> <div className=\"am-lead-card-title\"><small>ነፃ ማሳያ</small><h2>ለመጀመር ዝግጁ ነዎት?</h2></div> <LeadForm kind=\"demo\" source=\"ethiopia-registration\" showBusinessName />",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/register/page.tsx#16",
+      "source_file": "app/ethiopia/register/page.tsx",
+      "source_line": 31,
+      "source_kind": "visible page text",
+      "current_amharic": "መረጃዎ በደህንነት ይጠበቃል",
+      "nearby_context": "<LeadForm kind=\"demo\" source=\"ethiopia-registration\" showBusinessName /> <footer><i />መረጃዎ በደህንነት ይጠበቃል</footer> </section> </main> ); }",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#1",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 18,
+      "source_kind": "code string",
+      "current_amharic": "ጥያቄዎ ደርሶናል",
+      "nearby_context": "tatus = \"idle\" | \"submitting\" | \"success\" | \"error\"; const formCopy = { am: { success: \"ጥያቄዎ ደርሶናል\", demoSuccess: \"በቅርቡ ለማሳያ እንደውላለን።\", contactSuccess: \"በቅርቡ መልስ እንሰጥዎታለን።\", another",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#2",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 19,
+      "source_kind": "code string",
+      "current_amharic": "በቅርቡ ለማሳያ እንደውላለን።",
+      "nearby_context": "\"success\" | \"error\"; const formCopy = { am: { success: \"ጥያቄዎ ደርሶናል\", demoSuccess: \"በቅርቡ ለማሳያ እንደውላለን።\", contactSuccess: \"በቅርቡ መልስ እንሰጥዎታለን።\", another: \"ሌላ ጥያቄ ይላኩ\", name: \"ሙሉ ስም\",",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#3",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 20,
+      "source_kind": "code string",
+      "current_amharic": "በቅርቡ መልስ እንሰጥዎታለን።",
+      "nearby_context": "am: { success: \"ጥያቄዎ ደርሶናል\", demoSuccess: \"በቅርቡ ለማሳያ እንደውላለን።\", contactSuccess: \"በቅርቡ መልስ እንሰጥዎታለን።\", another: \"ሌላ ጥያቄ ይላኩ\", name: \"ሙሉ ስም\", namePlaceholder: \"ስምዎን ያስገቡ\", business",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#4",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 21,
+      "source_kind": "code string",
+      "current_amharic": "ሌላ ጥያቄ ይላኩ",
+      "nearby_context": "demoSuccess: \"በቅርቡ ለማሳያ እንደውላለን።\", contactSuccess: \"በቅርቡ መልስ እንሰጥዎታለን።\", another: \"ሌላ ጥያቄ ይላኩ\", name: \"ሙሉ ስም\", namePlaceholder: \"ስምዎን ያስገቡ\", business: \"የንግድ ስም\", optional:",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#5",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 22,
+      "source_kind": "code string",
+      "current_amharic": "ሙሉ ስም",
+      "nearby_context": "ማሳያ እንደውላለን።\", contactSuccess: \"በቅርቡ መልስ እንሰጥዎታለን።\", another: \"ሌላ ጥያቄ ይላኩ\", name: \"ሙሉ ስም\", namePlaceholder: \"ስምዎን ያስገቡ\", business: \"የንግድ ስም\", optional: \"ካለ\", businessP",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#6",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 23,
+      "source_kind": "code string",
+      "current_amharic": "ስምዎን ያስገቡ",
+      "nearby_context": "ess: \"በቅርቡ መልስ እንሰጥዎታለን።\", another: \"ሌላ ጥያቄ ይላኩ\", name: \"ሙሉ ስም\", namePlaceholder: \"ስምዎን ያስገቡ\", business: \"የንግድ ስም\", optional: \"ካለ\", businessPlaceholder: \"የሳሎን፣ ባርበር ወይም ንግድ ስም",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#7",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 24,
+      "source_kind": "code string",
+      "current_amharic": "የንግድ ስም",
+      "nearby_context": "another: \"ሌላ ጥያቄ ይላኩ\", name: \"ሙሉ ስም\", namePlaceholder: \"ስምዎን ያስገቡ\", business: \"የንግድ ስም\", optional: \"ካለ\", businessPlaceholder: \"የሳሎን፣ ባርበር ወይም ንግድ ስም\", email: \"ኢሜይል\",",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#8",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 25,
+      "source_kind": "code string",
+      "current_amharic": "ካለ",
+      "nearby_context": ", name: \"ሙሉ ስም\", namePlaceholder: \"ስምዎን ያስገቡ\", business: \"የንግድ ስም\", optional: \"ካለ\", businessPlaceholder: \"የሳሎን፣ ባርበር ወይም ንግድ ስም\", email: \"ኢሜይል\", phone: \"ስልክ ቁጥር\",",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#9",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 26,
+      "source_kind": "code string",
+      "current_amharic": "የሳሎን፣ ባርበር ወይም ንግድ ስም",
+      "nearby_context": "aceholder: \"ስምዎን ያስገቡ\", business: \"የንግድ ስም\", optional: \"ካለ\", businessPlaceholder: \"የሳሎን፣ ባርበር ወይም ንግድ ስም\", email: \"ኢሜይል\", phone: \"ስልክ ቁጥር\", message: \"መልእክት\", messagePlaceholder: \"እንዴት",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#10",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 27,
+      "source_kind": "code string",
+      "current_amharic": "ኢሜይል",
+      "nearby_context": ": \"የንግድ ስም\", optional: \"ካለ\", businessPlaceholder: \"የሳሎን፣ ባርበር ወይም ንግድ ስም\", email: \"ኢሜይል\", phone: \"ስልክ ቁጥር\", message: \"መልእክት\", messagePlaceholder: \"እንዴት ልንረዳዎ እንችላለን?\",",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#11",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 28,
+      "source_kind": "code string",
+      "current_amharic": "ስልክ ቁጥር",
+      "nearby_context": "tional: \"ካለ\", businessPlaceholder: \"የሳሎን፣ ባርበር ወይም ንግድ ስም\", email: \"ኢሜይል\", phone: \"ስልክ ቁጥር\", message: \"መልእክት\", messagePlaceholder: \"እንዴት ልንረዳዎ እንችላለን?\", sending: \"በመላክ ላይ...",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#12",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 29,
+      "source_kind": "code string",
+      "current_amharic": "መልእክት",
+      "nearby_context": "ssPlaceholder: \"የሳሎን፣ ባርበር ወይም ንግድ ስም\", email: \"ኢሜይል\", phone: \"ስልክ ቁጥር\", message: \"መልእክት\", messagePlaceholder: \"እንዴት ልንረዳዎ እንችላለን?\", sending: \"በመላክ ላይ...\", demoSubmit: \"ለማ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#13",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 30,
+      "source_kind": "code string",
+      "current_amharic": "እንዴት ልንረዳዎ እንችላለን?",
+      "nearby_context": "ድ ስም\", email: \"ኢሜይል\", phone: \"ስልክ ቁጥር\", message: \"መልእክት\", messagePlaceholder: \"እንዴት ልንረዳዎ እንችላለን?\", sending: \"በመላክ ላይ...\", demoSubmit: \"ለማሳያ ይመዝገቡ\", contactSubmit: \"መልእክት ይላኩ\",",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#14",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 31,
+      "source_kind": "code string",
+      "current_amharic": "በመላክ ላይ...",
+      "nearby_context": ": \"ስልክ ቁጥር\", message: \"መልእክት\", messagePlaceholder: \"እንዴት ልንረዳዎ እንችላለን?\", sending: \"በመላክ ላይ...\", demoSubmit: \"ለማሳያ ይመዝገቡ\", contactSubmit: \"መልእክት ይላኩ\", failure: \"ጥያቄዎን አሁን መላክ አል",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#15",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 32,
+      "source_kind": "code string",
+      "current_amharic": "ለማሳያ ይመዝገቡ",
+      "nearby_context": "ክት\", messagePlaceholder: \"እንዴት ልንረዳዎ እንችላለን?\", sending: \"በመላክ ላይ...\", demoSubmit: \"ለማሳያ ይመዝገቡ\", contactSubmit: \"መልእክት ይላኩ\", failure: \"ጥያቄዎን አሁን መላክ አልቻልንም። እባክዎ ቆይተው ይሞክሩ።\", },",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#16",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 33,
+      "source_kind": "code string",
+      "current_amharic": "መልእክት ይላኩ",
+      "nearby_context": "ት ልንረዳዎ እንችላለን?\", sending: \"በመላክ ላይ...\", demoSubmit: \"ለማሳያ ይመዝገቡ\", contactSubmit: \"መልእክት ይላኩ\", failure: \"ጥያቄዎን አሁን መላክ አልቻልንም። እባክዎ ቆይተው ይሞክሩ።\", }, en: { success: \"We received",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/LeadForm.tsx#17",
+      "source_file": "app/ethiopia/components/LeadForm.tsx",
+      "source_line": 34,
+      "source_kind": "code string",
+      "current_amharic": "ጥያቄዎን አሁን መላክ አልቻልንም። እባክዎ ቆይተው ይሞክሩ።",
+      "nearby_context": "ing: \"በመላክ ላይ...\", demoSubmit: \"ለማሳያ ይመዝገቡ\", contactSubmit: \"መልእክት ይላኩ\", failure: \"ጥያቄዎን አሁን መላክ አልቻልንም። እባክዎ ቆይተው ይሞክሩ።\", }, en: { success: \"We received your request\", demoSuccess: \"We’ll contact you sh",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/AddisMap.tsx#1",
+      "source_file": "app/ethiopia/components/AddisMap.tsx",
+      "source_line": 278,
+      "source_kind": "code string",
+      "current_amharic": "በአሁኑ ጊዜ 36 ቦታዎች ክፍት ናቸው",
+      "nearby_context": "e\" : \"is-fallback\"}`}> <div className=\"am-map-toolbar\"> <span><i />{isAmharic ? \"በአሁኑ ጊዜ 36 ቦታዎች ክፍት ናቸው\" : \"36 places are open right now\"}</span> <div> <button type=\"button\" aria-l",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/AddisMap.tsx#2",
+      "source_file": "app/ethiopia/components/AddisMap.tsx",
+      "source_line": 280,
+      "source_kind": "code string",
+      "current_amharic": "ካርታውን አጉላ",
+      "nearby_context": "open right now\"}</span> <div> <button type=\"button\" aria-label={isAmharic ? \"ካርታውን አጉላ\" : \"Zoom map in\"} onClick={() => changeZoom(1)}>+</button> <button type=\"button\" ari",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/AddisMap.tsx#3",
+      "source_file": "app/ethiopia/components/AddisMap.tsx",
+      "source_line": 281,
+      "source_kind": "code string",
+      "current_amharic": "ካርታውን አሳንስ",
+      "nearby_context": "lick={() => changeZoom(1)}>+</button> <button type=\"button\" aria-label={isAmharic ? \"ካርታውን አሳንስ\" : \"Zoom map out\"} onClick={() => changeZoom(-1)}>−</button> </div> </div>",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/AddisMap.tsx#4",
+      "source_file": "app/ethiopia/components/AddisMap.tsx",
+      "source_line": 286,
+      "source_kind": "code string",
+      "current_amharic": "የአዲስ አበባ ክፍት ካርታ",
+      "nearby_context": "vas\"> <div ref={containerRef} className=\"am-open-map-surface\" aria-label={isAmharic ? \"የአዲስ አበባ ክፍት ካርታ\" : \"Open map of Addis Ababa\"} /> {status === \"error\" && ( <div className=\"a",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/AddisMap.tsx#5",
+      "source_file": "app/ethiopia/components/AddisMap.tsx",
+      "source_line": 305,
+      "source_kind": "code string",
+      "current_amharic": "ካርታው ለጊዜው አልተገኘም",
+      "nearby_context": "><span /></button> ))} <p> <b>{isAmharic ? \"ካርታው ለጊዜው አልተገኘም\" : \"Map temporarily unavailable\"}</b> <span>{isAmharic ? \"ነፃ ክፍት ካርታ · API key አ",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/AddisMap.tsx#6",
+      "source_file": "app/ethiopia/components/AddisMap.tsx",
+      "source_line": 306,
+      "source_kind": "code string",
+      "current_amharic": "ነፃ ክፍት ካርታ · API key አያስፈልግም",
+      "nearby_context": "ic ? \"ካርታው ለጊዜው አልተገኘም\" : \"Map temporarily unavailable\"}</b> <span>{isAmharic ? \"ነፃ ክፍት ካርታ · API key አያስፈልግም\" : \"Free open map · no API key required\"}</span> </p> </div> )}",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/AddisMap.tsx#7",
+      "source_file": "app/ethiopia/components/AddisMap.tsx",
+      "source_line": 317,
+      "source_kind": "code string",
+      "current_amharic": "ኢትዮጵያ",
+      "nearby_context": "vg> <div className=\"am-map-journey\" aria-hidden=\"true\"> <span>{isAmharic ? \"ኢትዮጵያ\" : \"ETHIOPIA\"}</span><i /><span>{isAmharic ? \"አዲስ\" : \"ADDIS\"}</span> </div> </di",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/AddisMap.tsx#8",
+      "source_file": "app/ethiopia/components/AddisMap.tsx",
+      "source_line": 317,
+      "source_kind": "code string",
+      "current_amharic": "አዲስ",
+      "nearby_context": "dden=\"true\"> <span>{isAmharic ? \"ኢትዮጵያ\" : \"ETHIOPIA\"}</span><i /><span>{isAmharic ? \"አዲስ\" : \"ADDIS\"}</span> </div> </div> <div className=\"am-map-key\"> <sp",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/AddisMap.tsx#9",
+      "source_file": "app/ethiopia/components/AddisMap.tsx",
+      "source_line": 322,
+      "source_kind": "code string",
+      "current_amharic": "የተመረጠ",
+      "nearby_context": "</div> </div> <div className=\"am-map-key\"> <span><i />{isAmharic ? \"የተመረጠ\" : \"Selected\"}</span> <span><i />{isAmharic ? \"ሌሎች ሰፈሮች\" : \"Other neighbourhoods\"}</sp",
+      "revised_amharic": ""
+    },
+    {
+      "id": "app/ethiopia/components/AddisMap.tsx#10",
+      "source_file": "app/ethiopia/components/AddisMap.tsx",
+      "source_line": 323,
+      "source_kind": "code string",
+      "current_amharic": "ሌሎች ሰፈሮች",
+      "nearby_context": "<span><i />{isAmharic ? \"የተመረጠ\" : \"Selected\"}</span> <span><i />{isAmharic ? \"ሌሎች ሰፈሮች\" : \"Other neighbourhoods\"}</span> </div> <small className=\"am-map-attribution\">ADD",
+      "revised_amharic": ""
+    }
+  ],
+  "english_reference_sources": {
+    "app/ethiopia/en/contact/page.tsx": "import type { Metadata } from \"next\";\nimport LeadForm from \"../../components/LeadForm\";\n\nexport const metadata: Metadata = {\n  title: \"Contact | Aspio Ethiopia\",\n  description: \"Contact the Aspio Ethiopia team.\",\n};\n\nexport default function EthiopiaEnglishContact() {\n  return (\n    <main className=\"am-contact-page\">\n      <section className=\"am-contact-copy\">\n        <p className=\"am-lead-kicker\"><span />CONTACT / ETHIOPIA</p>\n        <h1>Have a question?<br /><em>Let’s talk.</em></h1>\n        <p>Ask us about Business Starter, your website or how Aspio fits your business. Our team will get back to you shortly.</p>\n        <div className=\"am-contact-details\">\n          <div><span>RESPONSE</span><b>Within one business day</b></div>\n          <div><span>LANGUAGE</span><b>Amharic · English</b></div>\n          <div><span>EMAIL</span><b>amanuel.t@aspio.se</b></div>\n        </div>\n      </section>\n      <section className=\"am-contact-form-card\">\n        <header><span>MESSAGE DESK</span><i>EN / ET</i></header>\n        <LeadForm kind=\"contact\" source=\"ethiopia-contact\" showBusinessName language=\"en\" />\n      </section>\n    </main>\n  );\n}\n",
+    "app/ethiopia/en/register/page.tsx": "import type { Metadata } from \"next\";\nimport Link from \"next/link\";\nimport LeadForm from \"../../components/LeadForm\";\n\nexport const metadata: Metadata = {\n  title: \"Free demo | Aspio Ethiopia\",\n  description: \"Register for a personal Aspio Business Starter + Website demo.\",\n};\n\nexport default function EthiopiaEnglishRegistration() {\n  return (\n    <main className=\"am-lead-page\">\n      <section className=\"am-lead-story\">\n        <p className=\"am-lead-kicker\"><span />BUSINESS STARTER + WEBSITE</p>\n        <h1>Your business.<br />Its next chapter.<br /><em>Starting here.</em></h1>\n        <p>Leave your name, email and phone number. Our team will contact you and show you exactly how Aspio can work for your business.</p>\n        <ol className=\"am-lead-steps\">\n          <li><span>01</span><div><b>Send your details</b><small>Less than one minute</small></div></li>\n          <li><span>02</span><div><b>Choose a time together</b><small>By phone or email</small></div></li>\n          <li><span>03</span><div><b>See it live</b><small>A personal 30-minute demo</small></div></li>\n        </ol>\n        <Link href=\"/ethiopia/en/business\">What is included in Business Starter + Website? <span>→</span></Link>\n      </section>\n      <section className=\"am-lead-card\">\n        <header><span>ASPIO / REGISTER</span><b>01—03</b></header>\n        <div className=\"am-lead-card-title\"><small>FREE DEMO</small><h2>Ready to get started?</h2></div>\n        <LeadForm kind=\"demo\" source=\"ethiopia-registration\" showBusinessName language=\"en\" />\n        <footer><i />Your details are handled securely</footer>\n      </section>\n    </main>\n  );\n}\n"
+  },
+  "bilingual_reference_sources": {}
+}
