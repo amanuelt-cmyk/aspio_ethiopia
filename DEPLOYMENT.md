@@ -2,14 +2,14 @@
 
 The frontend and API are deployed separately:
 
-- Vercel serves this Vinext/React frontend.
+- Vercel serves this native Next.js frontend.
 - A container host serves `backend`, PostgreSQL and persistent media storage.
 
 ## 1. Deploy the frontend to Vercel
 
 1. Sign in to Vercel with the GitHub account that can access `amanuelt-cmyk/aspio_ethiopia`.
 2. Select **Add New → Project**, import `amanuelt-cmyk/aspio_ethiopia`, and leave **Root Directory** as the repository root.
-3. Vercel reads `vercel.json`; it installs with `npm ci` and builds with `npm run build:vercel`.
+3. Vercel detects Next.js automatically. Keep the framework preset as **Next.js**, the build command as `next build`, and the output settings at their defaults.
 4. Under **Settings → Environment Variables**, add this variable for Production and Preview:
 
    ```text
@@ -58,16 +58,12 @@ go run ./cmd/api
 
 When the API has a public HTTPS URL, put that URL in Vercel as `NEXT_PUBLIC_ASPIO_API_URL` and redeploy the frontend.
 
-## Local Vercel-compatible build
+## Local production build
 
 From the repository root in PowerShell:
 
 ```powershell
-$env:VERCEL = "1"
-$env:NITRO_PRESET = "vercel"
-npm run build:vercel
-Remove-Item Env:VERCEL
-Remove-Item Env:NITRO_PRESET
+npm ci
+npm run build
+npm start
 ```
-
-Nitro generates Vercel's native Build Output in `.vercel/output`.

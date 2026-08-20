@@ -7,11 +7,10 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vinext build",
-    "build:vercel": "vite build",
-    "start": "vinext start",
-    "lint": "eslint app lib worker vite.config.ts",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint app lib next.config.ts",
     "typecheck": "tsc --noEmit",
     "copy:export": "node tools/export-amharic-copy.mjs",
     "copy:apply": "node tools/apply-amharic-review.mjs"
@@ -23,22 +22,13 @@
     "react-dom": "19.2.6"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "1.37.1",
     "@tailwindcss/postcss": "4.2.1",
-    "@tailwindcss/vite": "^4.3.3",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "@vitejs/plugin-react": "6.0.2",
-    "@vitejs/plugin-rsc": "0.5.26",
     "eslint": "9.39.4",
     "eslint-config-next": "16.3.1",
-    "nitro": "^3.0.260610-beta",
-    "react-server-dom-webpack": "19.2.6",
     "tailwindcss": "4.2.1",
-    "typescript": "5.9.3",
-    "vinext": "0.0.50",
-    "vite": "8.0.13",
-    "wrangler": "4.92.0"
+    "typescript": "5.9.3"
   }
 }

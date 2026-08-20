@@ -1,10 +1,10 @@
 # Aspio Ethiopia
 
-Aspio Ethiopia's public website and administration interface, with a separate Go API for leads, salons, featured places, gallery media, blog content and administrator accounts.
+Aspio Ethiopia's Next.js website and administration interface, with a separate Go API for leads, salons, featured places, gallery media, blog content and administrator accounts.
 
 ## Project structure
 
-- `app`, `lib`, `worker`: Vinext/React frontend
+- `app`, `lib`: Next.js App Router frontend
 - `public`: frontend images, video and static assets
 - `backend`: standalone Go API and PostgreSQL migrations
 - `DEPLOYMENT.md`: Vercel frontend and API deployment guide
@@ -33,4 +33,4 @@ npm run build
 
 ## Deployment
 
-The frontend is ready for Vercel. The Go API must run as a separate persistent service. See [DEPLOYMENT.md](DEPLOYMENT.md) for the full procedure and required environment variables.
+The Next.js frontend is ready for native Vercel deployment. The Go API must run as a separate persistent service. See [DEPLOYMENT.md](DEPLOYMENT.md) for the full procedure and required environment variables.
