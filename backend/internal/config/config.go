@@ -31,9 +31,18 @@ type Config struct {
 }
 
 func Load() (Config, error) {
+	httpAddr := strings.TrimSpace(os.Getenv("HTTP_ADDR"))
+	if httpAddr == "" {
+		if port := strings.TrimSpace(os.Getenv("PORT")); port != "" {
+			httpAddr = ":" + port
+		} else {
+			httpAddr = ":8080"
+		}
+	}
+
 	cfg := Config{
 		Environment:       strings.ToLower(env("APP_ENV", "development")),
-		HTTPAddr:          env("HTTP_ADDR", ":8080"),
+		HTTPAddr:          httpAddr,
 		DatabaseURL:       strings.TrimSpace(os.Getenv("DATABASE_URL")),
 		AllowedOrigins:    csv(env("CORS_ALLOWED_ORIGINS", "http://localhost:3000,http://localhost:5173")),
 		AutoMigrate:       envBool("AUTO_MIGRATE", false),

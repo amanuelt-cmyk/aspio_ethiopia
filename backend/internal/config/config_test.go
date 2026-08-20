@@ -27,6 +27,32 @@ func TestLoadAcceptsValidDevelopmentConfiguration(t *testing.T) {
 	}
 }
 
+func TestLoadUsesPlatformPortWhenHTTPAddressIsUnset(t *testing.T) {
+	validEnvironment(t)
+	t.Setenv("HTTP_ADDR", "")
+	t.Setenv("PORT", "3210")
+	configuration, err := Load()
+	if err != nil {
+		t.Fatalf("Load() error = %v", err)
+	}
+	if configuration.HTTPAddr != ":3210" {
+		t.Fatalf("HTTPAddr = %q, want :3210", configuration.HTTPAddr)
+	}
+}
+
+func TestLoadPrefersExplicitHTTPAddress(t *testing.T) {
+	validEnvironment(t)
+	t.Setenv("HTTP_ADDR", ":9090")
+	t.Setenv("PORT", "3210")
+	configuration, err := Load()
+	if err != nil {
+		t.Fatalf("Load() error = %v", err)
+	}
+	if configuration.HTTPAddr != ":9090" {
+		t.Fatalf("HTTPAddr = %q, want :9090", configuration.HTTPAddr)
+	}
+}
+
 func TestLoadRejectsUnknownEnvironment(t *testing.T) {
 	validEnvironment(t)
 	t.Setenv("APP_ENV", "prodution")
