@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/aspio-se/aspio-backend/internal/domain"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/domain"
 )
 
 const salonColumns = `id::text, slug, status, category, name_am, name_en, description_am, description_en,

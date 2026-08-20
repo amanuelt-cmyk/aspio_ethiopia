@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aspio-se/aspio-backend/internal/domain"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/domain"
 )
 
 const adminColumns = `id::text, email, name, phone, job_title, avatar_url, password_hash, role, active, last_login_at, created_at, updated_at`

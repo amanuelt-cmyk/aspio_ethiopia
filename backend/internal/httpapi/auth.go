@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aspio-se/aspio-backend/internal/security"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/security"
 )
 
 var invalidLoginHash = func() string {

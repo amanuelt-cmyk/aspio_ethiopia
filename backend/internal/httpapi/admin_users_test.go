@@ -6,7 +6,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/aspio-se/aspio-backend/internal/domain"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/domain"
 )
 
 func TestNormalizeAdminAccount(t *testing.T) {

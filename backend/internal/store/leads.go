@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/aspio-se/aspio-backend/internal/domain"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/domain"
 )
 
 const leadColumns = `id::text,kind,source,locale,name,email,phone,business_name,message,status,email_status,created_at,updated_at`

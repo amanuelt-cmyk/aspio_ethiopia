@@ -1,4 +1,4 @@
-module github.com/aspio-se/aspio-backend
+module github.com/amanuelt-cmyk/aspio_ethiopia/backend
 
 go 1.25.0
 

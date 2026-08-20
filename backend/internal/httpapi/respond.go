@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/aspio-se/aspio-backend/internal/store"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/store"
 	"github.com/jackc/pgx/v5/pgconn"
 )
 

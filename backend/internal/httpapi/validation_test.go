@@ -5,7 +5,7 @@ import (
 	"testing"
 	"unicode/utf8"
 
-	"github.com/aspio-se/aspio-backend/internal/domain"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/domain"
 )
 
 func TestCleanTruncatesUnicodeWithoutCorruptingIt(t *testing.T) {

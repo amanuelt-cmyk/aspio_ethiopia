@@ -9,7 +9,7 @@ func validEnvironment(t *testing.T) {
 	t.Helper()
 	t.Setenv("APP_ENV", "test")
 	t.Setenv("DATABASE_URL", "postgres://aspio:aspio@localhost:55432/aspio?sslmode=disable")
-	t.Setenv("CORS_ALLOWED_ORIGINS", "http://localhost:5173")
+	t.Setenv("CORS_ALLOWED_ORIGINS", "http://localhost:3000")
 	t.Setenv("UPLOAD_DIR", "./testdata/uploads")
 	t.Setenv("LEAD_RECIPIENT_EMAIL", "leads@example.com")
 	t.Setenv("LEAD_FROM_EMAIL", "Aspio Leads <leads@example.com>")
@@ -84,7 +84,7 @@ func TestLoadRequiresDatabaseTLSInProduction(t *testing.T) {
 
 func TestLoadRejectsOriginWithPath(t *testing.T) {
 	validEnvironment(t)
-	t.Setenv("CORS_ALLOWED_ORIGINS", "http://localhost:5173/ethiopia")
+	t.Setenv("CORS_ALLOWED_ORIGINS", "http://localhost:3000/ethiopia")
 	_, err := Load()
 	if err == nil || !strings.Contains(err.Error(), "origins cannot include") {
 		t.Fatalf("Load() error = %v, want origin validation", err)

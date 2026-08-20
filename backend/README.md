@@ -1,6 +1,6 @@
 # Aspio API
 
-Standalone Go API for the Aspio Ethiopia marketplace, blog, admin operations, and lead delivery. It belongs only to the Ethiopia project, runs independently from both frontends, and stores business data in PostgreSQL.
+Standalone Go API for the Aspio Ethiopia marketplace, blog, admin operations, and lead delivery. It belongs only to the Ethiopia project, runs independently from the Next.js frontend, and stores business data in PostgreSQL.
 
 ## What is included
 
@@ -66,7 +66,7 @@ Then authenticate at `POST /api/v1/admin/auth/login`. Send the returned token as
 
 ## Connect the frontend
 
-Copy `sites/ethiopia/.env.example` to `sites/ethiopia/.env.local` and restart the Ethiopia frontend:
+Copy `frontend/.env.example` to `frontend/.env.local` and restart the Ethiopia frontend:
 
 ```dotenv
 NEXT_PUBLIC_ASPIO_API_URL=http://localhost:18080
@@ -79,10 +79,10 @@ The Ethiopia marketplace and featured salon grid will then read published salons
 After the API and frontend are running, open:
 
 ```text
-http://localhost:5173/ethiopia/admin
+http://localhost:3000/ethiopia/admin
 ```
 
-If Vite chooses another port, use the frontend URL printed in your terminal and append `/ethiopia/admin`.
+If Next.js chooses another port, use the frontend URL printed in your terminal and append `/ethiopia/admin`.
 
 Use the administrator created with `cmd/admin`. The dashboard is intentionally absent from public navigation and provides:
 
@@ -163,7 +163,7 @@ Set `CRM_WEBHOOK_URL` and optionally `CRM_WEBHOOK_TOKEN` when the CRM is ready; 
 - put the API behind HTTPS and a reverse proxy/load balancer
 - use Go 1.26.6 or a newer patched release and run `govulncheck ./...` before releases
 - add centralized metrics/alerting for `delivery_jobs.status='dead'`
-- use an object store and signed upload flow when the admin media interface is added
+- back up the mounted media volume independently from PostgreSQL; move the storage implementation to object storage before horizontal scaling
 
 ## Verification
 

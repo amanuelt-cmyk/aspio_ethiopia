@@ -44,7 +44,7 @@ func Load() (Config, error) {
 		Environment:       strings.ToLower(env("APP_ENV", "development")),
 		HTTPAddr:          httpAddr,
 		DatabaseURL:       strings.TrimSpace(os.Getenv("DATABASE_URL")),
-		AllowedOrigins:    csv(env("CORS_ALLOWED_ORIGINS", "http://localhost:3000,http://localhost:5173")),
+		AllowedOrigins:    csv(env("CORS_ALLOWED_ORIGINS", "http://localhost:3000")),
 		AutoMigrate:       envBool("AUTO_MIGRATE", false),
 		SessionTTL:        envDuration("SESSION_TTL", 24*time.Hour),
 		ShutdownTimeout:   envDuration("SHUTDOWN_TIMEOUT", 10*time.Second),

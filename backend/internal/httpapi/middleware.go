@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/aspio-se/aspio-backend/internal/domain"
-	"github.com/aspio-se/aspio-backend/internal/security"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/domain"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/security"
 	"github.com/go-chi/chi/v5/middleware"
 )
 
@@ -159,7 +159,7 @@ func (l *limiter) middleware(trustProxy bool, logger *slog.Logger) func(http.Han
 			allowed := entry.Count <= l.limit
 			l.mu.Unlock()
 			if !allowed {
-				logger.Warn("rate limit exceeded", "ip", host)
+				logger.Warn("rate limit exceeded")
 				w.Header().Set("Retry-After", "60")
 				writeError(w, http.StatusTooManyRequests, "rate_limited", "Too many requests. Please wait and try again.")
 				return

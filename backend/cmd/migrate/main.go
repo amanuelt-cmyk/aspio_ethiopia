@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/aspio-se/aspio-backend/internal/config"
-	"github.com/aspio-se/aspio-backend/internal/database"
-	"github.com/aspio-se/aspio-backend/internal/migrations"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/config"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/database"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/migrations"
 )
 
 func main() {

@@ -3,7 +3,7 @@ package store
 import (
 	"context"
 
-	"github.com/aspio-se/aspio-backend/internal/domain"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/domain"
 )
 
 const mediaColumns = `id::text,salon_id::text,kind,url,mime_type,original_name,alt_text,size_bytes,sort_order,created_at`

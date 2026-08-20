@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	mediastore "github.com/aspio-se/aspio-backend/internal/media"
+	mediastore "github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/media"
 )
 
 func (s *Server) updateProfile(w http.ResponseWriter, r *http.Request) {

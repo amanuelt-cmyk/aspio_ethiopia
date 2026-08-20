@@ -3,7 +3,7 @@ package store
 import (
 	"context"
 
-	"github.com/aspio-se/aspio-backend/internal/domain"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/domain"
 )
 
 const galleryColumns = `id::text,kind,status,url,mime_type,original_name,title_am,title_en,caption_am,caption_en,size_bytes,sort_order,COALESCE(created_by::text,''),created_at,updated_at`

@@ -10,12 +10,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/aspio-se/aspio-backend/internal/config"
-	"github.com/aspio-se/aspio-backend/internal/database"
-	"github.com/aspio-se/aspio-backend/internal/delivery"
-	"github.com/aspio-se/aspio-backend/internal/httpapi"
-	"github.com/aspio-se/aspio-backend/internal/migrations"
-	"github.com/aspio-se/aspio-backend/internal/store"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/config"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/database"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/delivery"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/httpapi"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/migrations"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/store"
 )
 
 func main() {

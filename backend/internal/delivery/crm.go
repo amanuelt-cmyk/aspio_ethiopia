@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/aspio-se/aspio-backend/internal/domain"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/domain"
 )
 
 type CRMWebhook struct {

@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/aspio-se/aspio-backend/internal/domain"
-	mediastore "github.com/aspio-se/aspio-backend/internal/media"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/domain"
+	mediastore "github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/media"
 	"github.com/go-chi/chi/v5"
 )
 

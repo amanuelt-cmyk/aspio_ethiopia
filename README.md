@@ -1,36 +1,71 @@
 # Aspio Ethiopia
 
-Aspio Ethiopia's Next.js website and administration interface, with a separate Go API for leads, salons, featured places, gallery media, blog content and administrator accounts.
+Production repository for the Aspio Ethiopia website, administration dashboard, and API. The Swedish Aspio application and all earlier prototypes are intentionally excluded.
 
-## Project structure
+## Repository layout
 
-- `app`, `lib`: Next.js App Router frontend
-- `public`: frontend images, video and static assets
-- `backend`: standalone Go API and PostgreSQL migrations
-- `DEPLOYMENT.md`: Vercel frontend and API deployment guide
+```text
+aspio_ethiopia/
+├── frontend/                 Next.js website and browser admin
+│   ├── public/               Versioned static assets
+│   └── src/
+│       ├── app/              App Router pages, layouts, and route-local UI
+│       └── lib/              Shared frontend types and utilities
+├── backend/                  Standalone Go API
+│   ├── cmd/                  API and operational commands
+│   ├── internal/             Private application packages
+│   └── docs/openapi.yaml     HTTP API contract
+├── docs/                     Architecture, deployment, security, and copy
+└── .github/workflows/        Automated validation
+```
 
-The Swedish Aspio website is intentionally not part of this repository.
+The two applications deploy independently:
+
+- `frontend` → Vercel
+- `backend` → Railway, with PostgreSQL and a persistent media volume
 
 ## Local development
 
-Requirements: Node.js 22.13 or newer, Go 1.24 or newer, Docker Desktop and npm.
+Requirements: Node.js 22.13+, Go 1.26.6+, Docker Desktop, and npm.
+
+Start the API and PostgreSQL:
 
 ```powershell
-npm ci
+Set-Location backend
+Copy-Item .env.example .env
+docker compose up --build -d
+```
+
+Start the website in another terminal:
+
+```powershell
+Set-Location frontend
 Copy-Item .env.example .env.local
+npm ci
 npm run dev
 ```
 
-The frontend opens at `http://localhost:5173`. To run the complete system, follow the backend setup in [backend/README.md](backend/README.md) and set `NEXT_PUBLIC_ASPIO_API_URL=http://localhost:18080` in `.env.local`.
+Open `http://localhost:3000/ethiopia`. The private dashboard is at `http://localhost:3000/ethiopia/admin`.
 
-## Checks
+## Validation
 
 ```powershell
+Set-Location frontend
 npm run typecheck
 npm run lint
 npm run build
+
+Set-Location ../backend
+go test ./...
+go vet ./...
 ```
 
-## Deployment
+## Documentation
 
-The Next.js frontend is ready for native Vercel deployment. The Go API must run as a separate persistent service. See [DEPLOYMENT.md](DEPLOYMENT.md) for the full procedure and required environment variables.
+- [Architecture](docs/architecture.md)
+- [Deployment](docs/deployment.md)
+- [Security](docs/security.md)
+- [Website copy](docs/content/website-copy.md)
+- [Backend operations](backend/README.md)
+
+Never commit `.env` files, database credentials, admin passwords, Resend keys, or production exports.

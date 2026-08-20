@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/aspio-se/aspio-backend/internal/config"
-	"github.com/aspio-se/aspio-backend/internal/location"
-	"github.com/aspio-se/aspio-backend/internal/media"
-	"github.com/aspio-se/aspio-backend/internal/store"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/config"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/location"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/media"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/store"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 )

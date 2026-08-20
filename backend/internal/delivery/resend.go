@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aspio-se/aspio-backend/internal/domain"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/domain"
 )
 
 var ErrNotConfigured = errors.New("delivery provider is not configured")

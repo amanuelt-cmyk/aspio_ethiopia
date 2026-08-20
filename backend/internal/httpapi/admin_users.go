@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/aspio-se/aspio-backend/internal/domain"
-	"github.com/aspio-se/aspio-backend/internal/security"
-	"github.com/aspio-se/aspio-backend/internal/store"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/domain"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/security"
+	"github.com/amanuelt-cmyk/aspio_ethiopia/backend/internal/store"
 	"github.com/go-chi/chi/v5"
 )
 

@@ -3,13 +3,17 @@ node_modules/
 .env.*
 !.env.example
 .next/
+.npm-cache/
 .vercel/
 coverage/
+.idea/
+.vscode/
 *.log
 *.tsbuildinfo
 
 backend/.cache/
 backend/data/
+backend/tmp/
 backend/uploads/
 
 .DS_Store
